@@ -14,44 +14,74 @@
     <!-- header section -->
     <header>
         <nav>
-            <a href = #about>About</a>
-            <a href = #projects>Projects</a>
-            <a href = #contact>Contact</a>
+            <a href="#about">
+                <span class="nav-outline">About</span>
+                <span class="nav-fill">About</span>
+            </a>
+            <a href="#projects">
+                <span class="nav-outline">Projects</span>
+                <span class="nav-fill">Projects</span>
+            </a>
+            <a href="#contact">
+                <span class="nav-outline">Contact</span>
+                <span class="nav-fill">Contact</span>
+            </a>
         </nav>
     </header>
 
-<div>
-    <!-- hero section -->   
-    <div class="hero-section">
-        <div class="header-button-container">
+<div class = "main-container">
+    <div class="header-button-container">
             <!-- Music Button -->
-            <button id="music-button" class = "circles">
-                <img src="static/music icon.svg" alt="Music Icon" />
+            <button id="music-button" class = "header-button">
+                <img src="static/music button.svg" alt="Music Icon" />
             </button>
 
             <!-- Theme Button -->
-            <button id="theme-button" class = "circles">
-                <img src="static/sun icon.svg" alt="Theme Icon" />
+            <button id="theme-button" class = "header-button">
+                <img src="static/theme button.svg" alt="Theme Icon" />
             </button>
 
             <!-- Resume Button -->
-            <button id="resume-button" class = "circles">
-                <img src="static/resume icon.svg" alt="Resume Icon" />
+            <button id="resume-button" class = "header-button">
+                <img src="static/resume button.svg" alt="Resume Icon" />
             </button>
+        </div>
 
+    <!-- hero section -->   
+    <div class="hero-section">
+        <div class = "name-and-flower">
+            <div class = "name">
+                <div class = "section-title">
+                    <h1 class="shadow-text">VISHALYA <br> SAIRAM</h1>
+                    <h1 class="yellow-shadow">VISHALYA <br> SAIRAM</h1>
+                    <h1 class="gradient-text">VISHALYA <br> SAIRAM</h1>
+                </div>
+                <p>aspiring frontend web developer and ux engineer</p>
+            </div>
+
+        <div class="main-flower-container">
+            <img src="static/leaves.svg" alt="leaves" id="leaves"/>
+            <img src="static/outer flower.svg" alt="outerflower" id="outer-flower"/>
+            <img src="static/inner flower.svg" alt="flower" id="inner-flower"/>
+            <!-- Floaties -->
+            <div class="pink-floaty" style="top: 30%; left: -10%; width: 40px; height: 40px;"></div>
+            <div class="pink-floaty" style="top: 90%; left: -10%; width: 60px; height: 60px;"></div>
+            <div class="pink-floaty" style="top: 150%; left: 120%; width: 50px; height: 50px;"></div>
+            <div class="pink-floaty" style="top: 0%; left: 180%; width: 25px; height: 25px;"></div>
+            <div class="yellow-floaty" style="top: -10%; left: 0%; width: 60px; height: 60px;"></div>
+            <div class="yellow-floaty" style="top: 0%; left: 150%; width: 50px; height: 50px;"></div>
+            <div class="yellow-floaty" style="top: 130%; left: 0%; width: 25px; height: 25px;"></div>
+            <div class="yellow-floaty" style="top: 170%; left: 150%; width: 20px; height: 20px;"></div>
+            <div class="green-floaty" style="top: 10%; left: 30%; width: 20px; height: 20px;"></div>
+            <div class="green-floaty" style="top: 150%; left: 35%; width: 40px; height: 40px;"></div>
+            <div class="green-floaty" style="top: 40%; left: 160%; width: 30px; height: 30px;"></div>
+            <div class="green-floaty" style="top: 140%; left: 150%; width: 30px; height: 30px;"></div>
         </div>
     </div>
-
-        <div class = "section-title">
-            <h1 class="shadow-text">VISHALYA <br> SAIRAM</h1>
-            <h1 class="yellow-shadow">VISHALYA <br> SAIRAM</h1>
-            <h1 class="gradient-text">VISHALYA <br> SAIRAM</h1>
-        </div>
-        <p>aspiring frontend web developer and ux engineer</p>
     </div>
 
-    <!-- about me section -->  
-    <div class = "about-me-section" id=" about">
+    <!-- about me section -->
+    <div class = "about-me-section" id="about">
         <div class = "section-title">
             <h1 class="shadow-text">ABOUT</h1>
             <h1 class="yellow-shadow">ABOUT</h1>
@@ -93,6 +123,7 @@
         </div>
     </div>   
 
+    
 </div>
 </body>
 
