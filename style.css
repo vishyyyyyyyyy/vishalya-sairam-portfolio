@@ -1,13 +1,14 @@
 :root {
   --bg-color: #FFECAD;
   --dark-theme-bg: #270637;
-  --color-baby-yellow: #FFECAD;
+  --color-baby-yellow: #FFF599;
   --font-family: Inter, sans-serif;
   --color-pink: #EE6E93;
   --color-deep-yellow: #FFBB3B;
   --color-hotpink: #f85281;
   --color-green: #A7FD65;
   --color-green-shadow: #82FF23;
+  --color-light-pink-border: #FE97A1;
   --text-gradient: linear-gradient(180deg, #F85281 0%, #FFF599 124%);
 }
 
@@ -76,7 +77,6 @@ nav a:hover .nav-fill {
 }
 .section-title {
   position: relative;
-  display: inline-block;
   line-height: 1;
 }
 
@@ -182,10 +182,6 @@ nav a:hover .nav-fill {
   z-index: 3;
 }
 
-#about{
-  margin-top:160px;
-}
-
 .floaties{
   position: absolute;
   z-index:3;
@@ -211,3 +207,89 @@ nav a:hover .nav-fill {
   background: radial-gradient(circle, var(--color-baby-yellow), var(--color-deep-yellow));
   box-shadow: 0 0 10px var(--color-deep-yellow);
 }
+
+
+.about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  padding-top: 100px;
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3vw;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.about-bee {
+  position:relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top:150px;
+  padding-left:30px;
+}
+
+.about-box-wrapper {
+  position: relative;
+  display: inline-block; /* or flex if needed */
+  width: fit-content;
+}
+
+.about-box-shadow {
+  position: absolute;
+  top: -30px; left: -25px;
+  width: 100%; height: 100%;
+  background: var(--color-deep-yellow);
+  border-radius: 60px;
+  border: 13px solid var(--color-light-pink-border);
+  filter: blur(3px);
+  z-index: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  /* Remove padding, min-width, max-width here */
+}
+
+.about-box {
+  position: relative;
+  background: var(--color-baby-yellow);
+  border-radius: 60px;
+  border: 13px solid var(--color-light-pink-border);
+  padding: 0rem 2rem;
+  min-width: 340px;
+  max-width: 615px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.about-text {
+  font-size: 1.45rem;
+  color: var(--color-pink);
+  font-family: var(--font-family);
+  font-weight: 700;
+  text-align: left;
+  line-height:2;
+  text-align:center;
+}
+.about-yellow {
+  color: var(--color-deep-yellow);
+  font-weight: 900;
+}
+
+.about-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+
