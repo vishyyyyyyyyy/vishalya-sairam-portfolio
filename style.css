@@ -215,7 +215,7 @@ nav a:hover .nav-fill {
   flex-direction: row;
   gap: 150px;
   margin-top: 200px;
-  margin-bottom: 60px;
+  margin-bottom: 250px;
   padding-top: 100px;
 }
 
@@ -293,3 +293,121 @@ nav a:hover .nav-fill {
 }
 
 
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+ /* margin-bottom: 60px; */
+ margin-top: 150px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.projects-view {
+  position: relative;
+  background: var(--color-baby-yellow);
+  border-radius: 60px;
+  border: 13px solid var(--color-light-pink-border);
+  width: 550px;
+  height: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0 2rem;
+}
+
+.projects-desc {
+  position: relative;
+  background: var(--color-baby-yellow);
+  border-radius: 60px;
+  border: 13px solid var(--color-light-pink-border);
+  width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 2.5rem;
+  justify-content: top;
+  align-items: center;
+  gap:20px;
+}
+.left-arrow-container, .right-arrow-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.left-arrow-container {
+  left: -30px;
+}
+
+.right-arrow-container {
+  right: -30px;
+}
+
+#left-arrow{
+  left:-5px;
+}
+#left-arrow img {
+  transform: rotate(180deg);
+}
+
+#right-arrow{
+  left:5px;
+}
+.arrow {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-flower{
+  position: absolute;
+  z-index: 2;
+  scale:0.8;
+}
+
+.project-title, .project-text {
+  text-align:center;
+}
+
+.project-text{
+  font-size: 1.5rem;
+}
+
+.project-title{
+  font-size: 2rem;
+}
+
+.skills-section {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;  
+  gap: 30px;
+  margin-bottom: 40px;
+}
