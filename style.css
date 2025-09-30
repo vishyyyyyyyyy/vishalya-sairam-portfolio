@@ -182,15 +182,15 @@ nav a:hover .nav-fill {
   z-index: 3;
 }
 
-.floaties{
-  position: absolute;
-  z-index:3;
-}
 .pink-floaty{
   position:absolute;
   border-radius:50%;
   background: radial-gradient(circle, var(--color-pink), var(--color-hotpink));
   box-shadow: 0 0 10px var(--color-hotpink);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
 }
 .green-floaty{
   position:absolute;
@@ -198,6 +198,10 @@ nav a:hover .nav-fill {
   background-color: var(--color-green);
   background: radial-gradient(circle, var(--color-green), var(--color-green-shadow));
   box-shadow: 0 0 10px var(--color-green-shadow);
+   display:flex;
+  justify-content:center;
+  align-items:center;
+  
 }
 
 .yellow-floaty{
@@ -206,6 +210,10 @@ nav a:hover .nav-fill {
   background-color: var(--color-baby-yellow);
   background: radial-gradient(circle, var(--color-baby-yellow), var(--color-deep-yellow));
   box-shadow: 0 0 10px var(--color-deep-yellow);
+   display:flex;
+  justify-content:center;
+  align-items:center;
+  
 }
 
 
@@ -409,5 +417,31 @@ nav a:hover .nav-fill {
   align-items: center;  
   justify-content: center;  
   gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 200px;
 }
+
+.flower-and-floaties-container{
+  position: relative;
+  height: auto;
+}
+
+.skill-logo{
+  object-fit: contain;
+  display: block;
+  z-index:4;
+  margin:0;
+  padding:0;
+}
+
+.contact-me-section{
+  margin-top: 100px;
+  padding-top: 50px;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
