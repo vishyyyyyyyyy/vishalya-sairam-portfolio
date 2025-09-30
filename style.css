@@ -66,6 +66,7 @@ nav a:hover .nav-fill {
 }
 .main-container{
   margin: 10px;
+  overflow: hidden;
 }
 
 .hero-section{
@@ -308,7 +309,7 @@ nav a:hover .nav-fill {
   align-items: center;
   gap: 3rem;
  /* margin-bottom: 60px; */
- margin-top: 150px;
+ margin-top: 50px;
   padding-top: 60px;
   padding-bottom: 100px;
 }
@@ -442,6 +443,61 @@ nav a:hover .nav-fill {
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-bottom: 60px;
+  /* margin-bottom: 20px; */
+  overflow: hidden;
+}
+
+.contact-flexbox{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 
+.contact-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  gap: 40px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.email-btn, .linkedin-btn, .github-btn {
+  background: var(--color-hotpink);
+  color: var(--color-baby-yellow);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-btn:hover {
+  background: var(--color-baby-yellow);
+  color: var(--color-hotpink);
+  box-shadow:
+    0 5px 8px rgba(0, 0, 0, 0.3),      /* black drop shadow */
+    inset 0 0 0 7px var(--color-hotpink); /* pink inset border */
+}
+
+
+.butterfly{
+  position:absolute;
+}
+
+.half-flower{
+  position:absolute;
+  overflow:hidden;
+}
