@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 </head>
 
-<div>
+<body>
 
     <!-- header section -->
     <header>
@@ -32,18 +32,27 @@
 <div class = "main-container">
     <div class="header-button-container">
             <!-- Music Button -->
-            <button id="music-button" class = "header-button">
-                <img src="static/music button.svg" alt="Music Icon" />
+            <button id="music-button" class = "header-button" type="button">
+                <div class="pink-floaty" style="width: 60px; height: 60px;">
+                    <img src="static/music on.svg" id="music-icon" alt="Music Icon" style="width: 50%; height: 50%;">
+                </div>
+
             </button>
 
             <!-- Theme Button -->
-            <button id="theme-button" class = "header-button">
-                <img src="static/theme button.svg" alt="Theme Icon" />
+            <button id="theme-button" class = "header-button" type="button">
+                <div class="yellow-floaty" style="width: 60px; height: 60px;">
+                    <img src="static/light mode.svg" id="theme-icon" alt="Theme Icon" style="width: 50%; height: 50%;">
+                </div>
+
             </button>
 
             <!-- Resume Button -->
-            <button id="resume-button" class = "header-button">
-                <img src="static/resume button.svg" alt="Resume Icon" />
+            <button id="resume-button" class = "header-button" type="button">
+                <div class="green-floaty" style="width: 60px; height: 60px;">
+                    <img src="static/resume.svg" alt="Resume Icon" style="width: 50%; height: 50%;">
+                </div>
+
             </button>
         </div>
 
@@ -113,7 +122,7 @@
                      </div>          
                 </div>
             </div>
-        </div>
+
 
     <!-- projects section -->  
     <div class = "projects-section" id = "projects">
@@ -223,9 +232,11 @@
     </div>
     
 
-    
+    </div>
 </div>
+<audio id="audio-player" src="Daydreaming.mp3"></audio>
 </body>
+
 
     <script src="script.js"></script>
 </html>

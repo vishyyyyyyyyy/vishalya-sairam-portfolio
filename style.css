@@ -12,14 +12,22 @@
   --text-gradient: linear-gradient(180deg, #F85281 0%, #FFF599 124%);
 }
 
+.dark-mode {
+  --bg-color: #270637;
+  --color-lightmode-color: #FFECAD;
+}
+
+
 body{
   background-color: var(--bg-color);
   font-family: var(--font-family);
   color: var(--color-pink);
   margin: 0;
+  
 }
 
 header{
+  width:100%;
   padding-top: 10px;
   padding-bottom:10px;   
   border-bottom: 6px solid var(--color-hotpink);
@@ -44,8 +52,7 @@ nav a{
   left: 0;
   z-index: 0;
   color: transparent;
-  -webkit-text-stroke: 5px var(--color-hotpink);
-  text-stroke: 6px var(--color-hotpink);
+  -webkit-text-stroke: 5px var(--color-hotpink);  
   pointer-events: none;
   font-weight: 900;
 }
@@ -56,6 +63,10 @@ nav a{
   color: var(--bg-color);
   font-weight: 900;
 }
+ .dark-mode .nav-fill {
+   color: var(--color-lightmode-color);
+   text-shadow: 0px 3px 10px var(--color-pink);
+ }
 
 nav a:hover .nav-outline {
   display: none;
@@ -64,8 +75,18 @@ nav a:hover .nav-fill {
   color: var(--color-hotpink);
   text-shadow: 0px 3px 2px var(--color-deep-yellow);
 }
+
+.dark-mode nav a:hover .nav-fill {
+  color: var(--color-hotpink);
+  text-shadow:none;
+}
+.dark-mode nav a:hover .nav-outline {
+  display: inline;
+  -webkit-text-stroke: 5px var(--color-baby-yellow);
+  text-shadow: 0px 3px 10px var(--color-deep-yellow);
+}
+
 .main-container{
-  margin: 10px;
   overflow: hidden;
 }
 
@@ -121,18 +142,27 @@ nav a:hover .nav-fill {
   filter: blur(1.5px);
 }
 
-.header-button-contaier{
+.header-button-container {
+  position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-left: auto;
-}
-.header-button{
-  background: none;
-  border:none;
-  cursor: pointer;
+  justify-content: left;
+  align-items: left;
+  gap: 50px;
+  padding-bottom: 80px;
 }
 
+.header-button{
+  background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 15px;
+    margin: 0 !important;
+    cursor: pointer;
+    appearance: none;
+}
 .header-button img{
   width: 100px;
   height: 100px;
@@ -443,7 +473,7 @@ nav a:hover .nav-fill {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   /* margin-bottom: 20px; */
   overflow: hidden;
 }
