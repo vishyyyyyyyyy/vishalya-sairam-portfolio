@@ -363,8 +363,12 @@ nav a:hover .nav-fill {
 
 .projects-view {
   position: relative;
-  background: var(--color-baby-yellow);
-  border-radius: 60px;
+  background-color: var(--color-baby-yellow);
+  background-image: url('static/cozy cat planner gif.gif');
+  background-size: 105% 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 70px;
   border: 13px solid var(--color-light-pink-border);
   width: 550px;
   height: 400px;
@@ -374,6 +378,7 @@ nav a:hover .nav-fill {
   justify-content: flex-start;
   align-items: flex-end;
   padding: 0 2rem;
+  
 }
 
 .projects-desc {
@@ -382,7 +387,7 @@ nav a:hover .nav-fill {
   border-radius: 60px;
   border: 13px solid var(--color-light-pink-border);
   width: 600px;
-  height: 400px;
+  height: auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -448,7 +453,15 @@ nav a:hover .nav-fill {
 .project-title{
   font-size: 2rem;
 }
-
+.project-circles{
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction: row;
+  top:30px;
+  gap: 20px;
+}
 .skills-section {
   margin-top: 50px;
   display: flex;
@@ -461,7 +474,16 @@ nav a:hover .nav-fill {
 
 .flower-and-floaties-container{
   position: relative;
-  height: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Remove absolute positioning for floaties used as carousel dots */
+.project-circles .pink-floaty,
+.project-circles .green-floaty {
+  position: static;
+  margin: 0;
 }
 
 .skill-logo{
