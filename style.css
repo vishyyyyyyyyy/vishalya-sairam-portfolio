@@ -1,3 +1,16 @@
+/* Mobile warning overlay styles */
+#mobile-warning {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #mobile-warning {
+    display: block !important;
+  }
+  body > :not(#mobile-warning) {
+    display: none !important;
+  }
+}
 :root {
   --bg-color: #FFECAD;
   --dark-theme-bg: #270637;
