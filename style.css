@@ -898,5 +898,63 @@ header nav a{
     display: none !important;
   }
 
-
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  header nav{
+    gap: 100px;
+  }
+
+  header nav a{
+    font-size: 2rem;
+  }
+
+  .hero-section{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin: 0;
+    padding-bottom: 30px;
+    padding-left: 0;
+  }
+  .name-and-flower{
+    padding-top: 150px;
+    gap: 100px;
+   scale: 100%;
+   flex-direction: row;
+}
+
+  .main-flower-container{
+    scale:70%;
+    left: -90px;
+  }
+
+  .about-section{
+    gap: 20px;
+  }
+
+  .about-bee{
+    padding-left:0px;
+  }
+
+  .projects-container{
+    flex-direction: column;
+  }
+
+  .flower-and-floaties-container{
+    scale: 70%;
+  }
+  .contact-me-section{
+    padding-bottom: 50px;
+  }
+
+  .contact-buttons-container{
+    padding-bottom: 50px;
+  }
+
+  .half-flower{
+    scale: 80%;
+  }
+  }
