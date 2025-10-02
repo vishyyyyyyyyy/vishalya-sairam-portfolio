@@ -4,13 +4,15 @@ const musicIcon = musicBtn.querySelector('img');
 const audio = document.getElementById('audio-player');
 let isPlaying = false;     
 
+// Play audio on page load
+
 musicBtn.addEventListener('click', () => {
   if (isPlaying) {
-    audio.pause();
-    musicIcon.src = 'static/music off.svg';
-  } else {
     audio.play();
     musicIcon.src = 'static/music on.svg';
+  } else {
+    audio.pause();
+    musicIcon.src = 'static/music off.svg';
   }
   isPlaying = !isPlaying;
 });

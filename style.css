@@ -1,16 +1,4 @@
-/* Mobile warning overlay styles */
-#mobile-warning {
-  display: none;
-}
 
-@media (max-width: 800px) {
-  #mobile-warning {
-    display: block !important;
-  }
-  body > :not(#mobile-warning) {
-    display: none !important;
-  }
-}
 :root {
   --bg-color: #FFECAD;
   --dark-theme-bg: #270637;
@@ -759,4 +747,20 @@ header nav a{
     0 3px 8px var(--color-light-pink-border),      /* light pink drop shadow */
     inset 0 0 0 3px var(--color-hotpink); /* pink inset border */
 }
+}
+
+@media (max-width: 320px) {
+
+header nav{
+  gap: 20px;
+}
+
+header nav a{
+  font-size: 1rem;
+}
+
+.left-card{
+  scale: 50%;
+}
+
 }
