@@ -579,7 +579,7 @@ nav a:hover .nav-fill {
 
 
 /*MEDIA QUERIES*/
-@media (max-width: 576px) {
+@media (max-width: 576px) or (orientation: portrait) {
 
 header nav{
   gap: 30px;
@@ -761,6 +761,92 @@ header nav a{
 
 .left-card{
   scale: 50%;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  header nav{
+    gap: 80px;
+  }
+
+  header nav a{
+    font-size: 2rem;
+  }
+
+  .hero-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .name-and-flower{
+    padding-top: 150px;
+    gap: 250px;
+   scale: 100%;
+  }
+  
+  .main-flower-container {
+    scale:100%;
+    margin-top: 50px;
+    left: -100px;
+  }
+
+  .about-section{
+    margin-top: 30px;
+    padding-top: 120px;  
+    gap: 150px;
+    padding-bottom: 150px; 
+  }
+  .about-bee{
+    scale: 100%;
+  }
+
+  .about-box-wrapper{
+    scale: 100%;
+  } 
+  .about-content{
+    gap: 100px;
+  }
+
+  .projects-section{
+    padding-top: 150px;
+    gap: 80px;
+  }
+
+  .left-card{
+    scale: 100%;
+  }
+
+  .projects-container{
+    gap: 250px;
+  }
+
+  .projects-desc {
+    width: 650px;
+    scale: 100%;
+  }
+
+  .flower-and-floaties-container{
+    scale: 50%;
+  }
+  
+  .contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  gap: 40px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+   background: var(--color-hotpink);
+  color: var(--color-baby-yellow);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 }
