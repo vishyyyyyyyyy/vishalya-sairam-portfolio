@@ -448,6 +448,7 @@ nav a:hover .nav-fill {
 
 .project-text{
   font-size: 1.5rem;
+  line-height:2;
 }
 
 .project-title{
@@ -536,6 +537,9 @@ nav a:hover .nav-fill {
   border-radius: 30px;
   text-decoration: none;
   cursor: pointer;
+   background: var(--color-hotpink);
+  color: var(--color-baby-yellow);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .email-btn, .linkedin-btn, .github-btn {
@@ -552,7 +556,7 @@ nav a:hover .nav-fill {
     inset 0 0 0 7px var(--color-hotpink); /* pink inset border */
 }
 
-.dark-mode .email-btn, .linkedin-btn, .github-btn {
+.dark-mode .email-btn, .dark-mode .linkedin-btn, .dark-mode .github-btn {
    box-shadow: 0 3px 8px var(--color-light-pink-border);
 }
 
@@ -570,4 +574,176 @@ nav a:hover .nav-fill {
 .half-flower{
   position:absolute;
   overflow:hidden;
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 576px) {
+
+header nav{
+  gap: 30px;
+}
+
+header nav a{
+  font-size: 1.5rem;
+}
+
+.hero-section{
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:  0;
+  gap: 30px;
+}
+.name{
+  scale:120%;
+}
+  
+.section-title{
+  text-align: center;
+  position: relative;
+}
+.name .shadow-text {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+  position: absolute;
+}
+
+.name .yellow-shadow {
+  left: 2%;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+  position: absolute;
+}
+
+
+.name-and-flower{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  display: flex;
+}
+
+.main-flower-container {
+  
+  scale: 50%;
+  left:-60px;
+  margin-top: 50px;
+}
+
+.about-section{
+  margin-top: 10px;
+  padding-top:30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom:0px;
+}
+
+.about-bee{
+  padding-top:0;
+  scale:50%;
+  padding-left:0;
+}
+
+.about-bee .green-floaty:nth-of-type(4) {
+  top: -10% !important;
+}
+
+.about-bee .green-floaty:nth-of-type(3) {
+  top: 30% !important;
+  left: 5% !important;
+}
+
+.about-content{
+  gap:5px;
+}
+.about-box-wrapper{
+  scale: 70%;
+}
+
+.projects-section{
+  margin-top: 0px;
+  gap:0px;
+  padding-top:0;
+  margin-bottom:0px;
+  padding-bottom: 0;
+}
+.projects-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  gap:30px; 
+
+}
+.left-card{
+  scale: 60%;
+}
+
+.projects-desc{
+  scale: 60%;
+  top: -150px;
+}
+
+.skills-section{
+  margin:0;
+  top: -100px;
+  gap:0;
+
+}
+
+.flower-and-floaties-container{
+ scale: 25%;
+}
+
+.contact-me-section{
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom:50px;
+  gap:30px;
+
+}
+.contact-buttons-container{
+  margin-top:0;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  gap: 5px;
+  height: 40px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.half-flower,
+  .butterfly {
+    display: none !important;
+  }
+
+.contact-btn:hover {
+  box-shadow:
+    0 5px 8px rgba(0, 0, 0, 0.3),      /* black drop shadow */
+    inset 0 0 0 3px var(--color-hotpink); /* pink inset border */
+}
+.dark-mode .contact-btn:hover {
+  box-shadow:
+    0 3px 8px var(--color-light-pink-border),      /* light pink drop shadow */
+    inset 0 0 0 3px var(--color-hotpink); /* pink inset border */
+}
 }
