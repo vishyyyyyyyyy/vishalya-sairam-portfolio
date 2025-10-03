@@ -1,3 +1,9 @@
+@media (min-width: 2000px) {
+  .hero-section,
+  .about-section {
+    justify-content: center;
+  }
+}
 
 :root {
   --bg-color: #FFECAD;
@@ -900,7 +906,7 @@ header nav a{
 
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1208px) {
 
   header nav{
     gap: 100px;
@@ -956,5 +962,35 @@ header nav a{
 
   .half-flower{
     scale: 80%;
+  } 
+
+  /* @media (min-width: 1200px) and (max-width: 1399px) {
+    
+
+    .name-and-flower{
+      gap: 50px !important;
+    }
+
+  } */
+
+  @media (min-width: 2000px) {
+    .main-container{
+      flex-direction: column;
+      margin:0;
+
+    }
+    .hero-section{
+      justify-content: center;
+      align-items: center;
+      gap:0;
+      left: 500px;   
+      width:100%   
+    }
+    .about-section{
+      justify-content: center;
+      align-items: center;
+    }
+
   }
-  }
+
+}
