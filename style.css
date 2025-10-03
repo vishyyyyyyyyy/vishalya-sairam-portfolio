@@ -608,7 +608,7 @@ header nav a{
   gap: 30px;
 }
 .name{
-  scale:120%;
+  scale:150%;
 }
   
 .section-title{
@@ -731,12 +731,12 @@ header nav a{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
+  width: 70px;
   gap: 5px;
-  height: 40px;
+  height: 35px;
   font-size: 0.5rem;
   font-weight: 700;
-  border-radius: 20px;
+  border-radius: 15px;
   text-decoration: none;
   cursor: pointer;
 }
