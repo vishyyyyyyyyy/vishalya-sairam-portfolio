@@ -1,6 +1,10 @@
-@media (min-width: 2000px) {
-  .hero-section,
+@media (min-width: 1500px) {
   .about-section {
+    justify-content: center;
+  }
+
+  .hero-section{
+    padding-left:0;
     justify-content: center;
   }
 }
@@ -967,7 +971,7 @@ header nav a{
   } 
 
 }
-  @media (min-width: 2000px) {
+  @media (min-width: 1500px) {
     .main-container{
       flex-direction: column;
       margin:0;
@@ -978,12 +982,21 @@ header nav a{
       align-items: center;
       gap:0;
       left: 500px;   
-      width:100%   
+      width:100%;   
+      padding-left: 0;
+      left:0;
+      margin:0;
+      scale: 120%;
     }
     .about-section{
       justify-content: center;
       align-items: center;
     }
+
+    .main-flower-container {
+    scale: 80%;
+    left: -100px;
+  }
 
   }
 
