@@ -499,6 +499,114 @@ nav a:hover .nav-fill {
   margin: 0;
 }
 
+/* Skill Popup Modal Styles */
+.skill-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(238, 110, 147, 0.18); /* var(--color-pink) with opacity */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.skill-modal {
+  background: var(--color-baby-yellow);
+  border-radius: 40px;
+  border: 8px solid var(--color-light-pink-border);
+  box-shadow: 0 8px 32px rgba(238, 110, 147, 0.18);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  min-width: 320px;
+  max-width: 420px;
+  text-align: center;
+  position: relative;
+  z-index: 1001;
+  font-family: var(--font-family);
+}
+
+.skill-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--color-hotpink);
+  color: var(--color-baby-yellow);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.2s;
+}
+.skill-modal-close:hover {
+  background: var(--color-deep-yellow);
+  color: var(--color-hotpink);
+}
+
+.skill-modal-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.skill-modal-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-pink);
+  margin-bottom: 0.5rem;
+}
+.skill-modal-text {
+  font-size: 1.1rem;
+  color: var(--color-pink);
+  margin-bottom: 1.2rem;
+  line-height: 2;
+}
+
+.skill-modal-cert {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--color-hotpink);
+  color: var(--color-baby-yellow);
+  border-radius: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.skill-modal-cert:hover {
+  background: var(--color-deep-yellow);
+  color: var(--color-hotpink);
+}
+.skill-modal-links {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.skill-modal-link {
+  color: var(--color-pink) !important;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.skill-modal-link:hover {
+  color: var(--color-deep-yellow) !important;
+}
+.skill-modal-link:hover {
+  color: var(--color-deep-yellow) !important;
+  text-decoration: underline;
+  margin: 0 0.3rem;
+}
+.skill-modal-link:hover {
+  color: var(--color-deep-yellow) !important;
+}
+
+.skill-modal-links a:hover {
+  color: var(--color-deep-yellow);
+}
+
 .skill-logo{
   object-fit: contain;
   display: block;
@@ -715,6 +823,10 @@ header nav a{
 
 .flower-and-floaties-container{
  scale: 25%;
+}
+
+.skill-modal-overlay{
+  scale:70%;
 }
 
 .contact-me-section{
