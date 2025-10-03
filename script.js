@@ -2,6 +2,7 @@
 const musicBtn = document.getElementById('music-button');
 const musicIcon = musicBtn.querySelector('img');
 const audio = document.getElementById('audio-player');
+audio.loop = true;
 let isPlaying = false;     
 
 // Play audio on page load
