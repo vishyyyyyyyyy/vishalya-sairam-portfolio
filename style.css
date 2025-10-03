@@ -4,7 +4,7 @@
     justify-content: center;
   }
 }
-
+/* Removed stray '!import' line */
 :root {
   --bg-color: #FFECAD;
   --dark-theme-bg: #270637;
@@ -906,7 +906,7 @@ header nav a{
 
 }
 
-@media (min-width: 992px) and (max-width: 1208px) {
+@media (min-width: 992px) and (max-width: 1200px) {
 
   header nav{
     gap: 100px;
@@ -947,6 +947,8 @@ header nav a{
 
   .projects-container{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .flower-and-floaties-container{
@@ -964,15 +966,7 @@ header nav a{
     scale: 80%;
   } 
 
-  /* @media (min-width: 1200px) and (max-width: 1399px) {
-    
-
-    .name-and-flower{
-      gap: 50px !important;
-    }
-
-  } */
-
+}
   @media (min-width: 2000px) {
     .main-container{
       flex-direction: column;
@@ -993,4 +987,27 @@ header nav a{
 
   }
 
+
+
+  @media (min-width: 1201px) and (max-width: 1399px) { 
+  .name-and-flower{
+    display: flex;
+    flex-direction: row;
+    gap: 200px !important;
+  }
+
+  .main-flower-container {
+    scale: 80%;
+    left: -70px;
+  }
+
+  .projects-container{
+    scale: 90%;
+    flex-direction: row;
+  }
+
+
+  .flower-and-floaties-container{
+    scale: 80%;
+  }
 }
