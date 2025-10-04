@@ -8,6 +8,8 @@
     justify-content: center;
   }
 }
+
+
 /* Removed stray '!import' line */
 :root {
   --bg-color: #FFECAD;
@@ -27,6 +29,11 @@
 .dark-mode {
   --bg-color: #270637;
   --color-lightmode-color: #FFECAD;
+}
+
+html
+ {
+  scroll-behavior: smooth;
 }
 
 
