@@ -40,16 +40,16 @@ const projects = [
   {
     title: "Cozy Cat Planner",
     image: 'static/cozy cat planner gif.gif',
-    desc: 'A full-stack desktop planner made with Electron that tracks todos + events and features a customizable cat avatar that saves session data. ' +
-          'Designed in Figma, the app includes animated backgrounds and timed pop-up messages for a playful, engaging experience. ' +
+    desc: 'A <span class="about-yellow">full-stack</span> desktop planner made with <span class="about-yellow">Electron</span> that tracks todos + events and features a customizable cat avatar that saves session data. ' +
+          'Designed in <span class="about-yellow">Figma</span>, the app includes animated backgrounds and timed pop-up messages for a playful, engaging experience. ' +
           'It’s the perfect organizer for college students who want to have a cute but functional planner while staying productive.',
     link: 'https://github.com/vishyyyyyyyyy/cozy-cat-planner'
   },
   {
     title: "LoveBeatz",
     image: 'static/lovebeatz image .png',
-    desc: 'This heart-themed rhythm visualizer created using p5.js responds dynamically to music using p5.ftt. ' +
-          'The central heart pulses to a song’s mid-frequency energies, while the waveform and floating ' +
+    desc: 'This heart-themed rhythm visualizer created using <span class="about-yellow">p5.js</span>, <span class="about-yellow">HTML</span>, and <span class="about-yellow">CSS</span> responds dynamically to music using <span class="about-yellow">p5.fft</span>. ' +
+          'The central heart pulses to a song’s <span class="about-yellow">mid-frequency</span> energies, while the waveform and floating ' +
           'heart particles react in real time, with interactive hearts that pop and respawn.',
     link: 'https://www.codedex.io/bb6jD421cUM8OEhhmSgN/live'
   },
@@ -58,9 +58,9 @@ const projects = [
     title: "Cupid's Kitchen",
     image: "static/cupids kitchen gif.gif",
     desc: 'Cupid’s Kitchen is a fictional restaurant menu website where users can order dishes infused with love to share with a special someone. ' +
-        'Inspired by a scene in Descendants, the site features interactive hearts on the homepage, ' +
-        'an order section with multiple input types, animated buttons, and a playful checkout process linked to a YouTube song. ' +
-        'Built with HTML5, CSS3, and JavaScript, and designed in Figma, the project highlights interactive design and creative UI elements.',
+        'This site features interactive scroll features and elements, ' +
+        'an order section with multiple input types, and a easter egg in the checkout process. ' +
+        'Built with <span class="about-yellow">HTML</span>, <span class="about-yellow">CSS</span>, and <span class="about-yellow">JavaScript</span>, and designed in <span class="about-yellow">Figma</span>, the project highlights interactive design and creative UI elements.',
     link: 'https://vishyyyyyyyyy.github.io/restraunt-menu/'
   },
 
@@ -70,8 +70,8 @@ const projects = [
     desc: 'BEARly a Hero is a 2D game where you play as a mischievous bear who ' +
     'once stole from the poor but decides to use his skills to help the forest community. ' +
     'Players explore different scenes, collect stolen treasures to restore balance, ' +
-    'and avoid getting caught while experiencing animated characters, timed text, and collision-triggered scene transitions. ' +
-    'Built with Godot 4.x, GDScript and visuals created in Aesprite, the project demonstrates scene-based progression, physics interactions, and interactive storytelling.',
+    'and avoid getting caught while experiencing <span class="about-yellow">animated</span> characters, timed text, and <span class="about-yellow">collision-triggered</span> scene transitions. ' +
+    'Built with <span class="about-yellow">Godot 4.x</span>, <span class="about-yellow">GDScript</span> and visuals created in <span class="about-yellow">Aesprite</span>, the project demonstrates scene-based progression, physics interactions, and interactive storytelling.',
     link: 'https://vishyyyyyyyyy.itch.io/bear-ly-a-hero'
   },
   // Add more projects as needed
