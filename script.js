@@ -236,5 +236,7 @@ window.addEventListener('DOMContentLoaded', function() {
         showSkillModal(skill);
       });
     }
-  });
+  }); 
+
+
 });
