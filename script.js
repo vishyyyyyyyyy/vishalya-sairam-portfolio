@@ -56,7 +56,7 @@ const projects = [
 
   {
     title: "Cupid's Kitchen",
-    image: "static/cupid's kitchen gif.gif",
+    image: "static/cupids kitchen gif.gif",
     desc: 'Cupid’s Kitchen is a fictional restaurant menu website where users can order dishes infused with love to share with a special someone. ' +
         'Inspired by a scene in Descendants, the site features interactive hearts on the homepage, ' +
         'an order section with multiple input types, animated buttons, and a playful checkout process linked to a YouTube song. ' +
@@ -108,7 +108,13 @@ document.querySelector('.left-arrow-container').addEventListener('click', () => 
 });
 
 // Initialize
+
 showProject(currentProject);
+document.querySelector('.projects-view').onclick = function(e) {
+  // Prevent navigation if clicking on arrows
+  if (e.target.closest('.left-arrow-container') || e.target.closest('.right-arrow-container')) return;
+  window.open(projects[currentProject].link, '_blank');
+};
 
 // --- Skill Modal Popup Logic ---
 
