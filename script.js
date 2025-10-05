@@ -4,7 +4,6 @@ const musicIcon = musicBtn.querySelector('img');
 const audio = document.getElementById('audio-player');
 audio.loop = true;
 let isPlaying = false;     
-
 // Play audio on page load
 
 musicBtn.addEventListener('click', () => {
@@ -138,7 +137,7 @@ const skillData = {
   'javascript': {
     img: 'static/javascript icon.svg',
     title: 'JavaScript',
-    text: '“I started learning JavaScript to bring my websites to life with interactivity and animations. It’s been challenging, but it’s also super fun to use for making playful UI elements and dynamic features across my projects!”',
+    text: 'I started learning JavaScript to bring my websites to life with interactivity and animations. It’s been challenging, but it’s also super fun to use for making playful UI elements and dynamic features across my projects!',
     cert: '',
     certText: '',
     links: []
@@ -154,7 +153,7 @@ const skillData = {
   'figma': {
     img: 'static/figma icon.svg',
     title: 'Figma',
-    text: 'Figma is where all my ideas start. I sketch out layouts, play with colors, and build frames that guide my coding process. It’s my favorite space to experiment before bringing everything to life with code. Some of my designs can be viewed here: <a href="https://www.figma.com/design/yxLbaj0aJsmCHMHqLFZHKP/Figma-design-frames?node-id=0-1&t=2mfsBZMWIGvUqtRO-1" target="_blank" class="skill-modal-link">Figma Designs</a>.',
+    text: 'Figma is where all my ideas start. I sketch out layouts, play with colors, and build frames that guide my coding process. It’s my favorite space to experiment before bringing everything to life with code. Some of my designs can be viewed here: <a href="https://www.figma.com/deck/qF8dsN3SQ6PJmhcsIaP8I4/Figma-design-frames?node-id=0-260&t=9lmW6nF9srJkZEVs-1" target="_blank" class="skill-modal-link">Figma Design Frames</a>.',
     cert: '',
     certText: '',
     links: []
@@ -165,6 +164,21 @@ const skillData = {
     text: 'CSS helps bring the magic from my designs into life in code. It’s where I get to play with colors, layouts, and tiny details to give each project its own personality.',
     certText: '',
     links: []
+  },
+  'illustrator': {
+    img: 'static/Adobe Illustrator icon.svg',
+    title: 'Adobe Illustrator',
+    text: 'I use Adobe Illustrator for creating vector graphics, icons, and digital illustrations for my design and coding projects. It helps me bring creative ideas to life with precision and style. Some of my projects can be viewed here: <a href="https://www.figma.com/deck/oSbiPUpGCZabO1UeGGHGOk/Adobe-Illustrator-Projects?node-id=3-260&t=pwid68WNwUkB6tE3-1" target="_blank" class="skill-modal-link">Illustrator Projects Link</a>',
+    cert: 'https://www.credly.com/badges/184d0386-fe79-4eeb-9f0c-2d219ddd6747',
+    certText: '',
+    links: []
+  },
+  'photoshop': {
+    img: 'static/Adobe Photoshop icon.svg',
+    title: 'Adobe Photoshop',
+    text: 'Adobe Photoshop is my go-to for editing images, creating mockups, and experimenting with digital art. I use it to enhance visuals and add creative touches to my web and UX projects. Some of my projects can be viewed here: <a href="https://www.figma.com/deck/5QHkTyziwZBbfLUPTrMWyS/Adobe-Photoshop-Projects?node-id=0-605&t=pwid68WNwUkB6tE3-1" target="_blank" class="skill-modal-link">Photoshop Projects Link</a>',
+    cert: 'https://www.credly.com/badges/184d0386-fe79-4eeb-9f0c-2d219ddd6747',
+    certText: 'View Certification'
   }
 };
 
@@ -224,6 +238,8 @@ window.addEventListener('DOMContentLoaded', function() {
     'html icon.svg': 'html',
     'figma icon.svg': 'figma',
     'css icon.svg': 'css'
+      ,'Adobe Illustrator icon.svg': 'illustrator'
+      ,'Adobe Photoshop icon.svg': 'photoshop'
   };
   document.querySelectorAll('.skill-logo').forEach(function(img) {
     const src = img.getAttribute('src');
@@ -237,6 +253,18 @@ window.addEventListener('DOMContentLoaded', function() {
       });
     }
   }); 
+
+    // Randomize floaty animation for each #floaty-random element
+    const floaties = document.querySelectorAll('#floaty-random');
+    floaties.forEach(floaty => {
+      // Random duration between 4s and 10s
+      const duration = (Math.random() * 8 + 8).toFixed(2) + 's';
+      // Random delay between 0s and 3s
+      const delay = (Math.random() * 3).toFixed(2) + 's';
+      floaty.style.animationDuration = duration;
+      floaty.style.animationDelay = delay;
+    });
+  
 
 
 });

@@ -330,7 +330,7 @@ nav a:hover .nav-fill {
 
 @keyframes float {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-18px); }
+  50%  { transform: translateY(-20px); }
   100% { transform: translateY(0); }
 }
 
@@ -428,6 +428,8 @@ nav a:hover .nav-fill {
   line-height: 1.8;
   text-align: center;
 }
+
+
 .photo-container{
   position: relative;
   padding-right: 50px;
@@ -527,7 +529,6 @@ nav a:hover .nav-fill {
    width: 200px;
   height: 150px;
 }
-
 
 .about-card-3:hover{
   transform: rotate(4deg);
@@ -633,10 +634,17 @@ nav a:hover .nav-fill {
   justify-content: center;
 }
 
+@keyframes mini-flower {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
 .mini-flower{
   position: absolute;
   z-index: 2;
   scale:0.8;
+  pointer-events: none;
+  animation: mini-flower 5s ease-in-out infinite;
 }
 
 .project-title, .project-text {
@@ -676,6 +684,21 @@ nav a:hover .nav-fill {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+
+@keyframes floaty-random {
+  0%   { transform: translateY(0) scale(1); }
+  20%  { transform: translateY(-8px) scale(0.95); }
+  40%  { transform: translateY(4px) scale(1.05); }
+  60%  { transform: translateY(-12px) scale(0.92); }
+  80%  { transform: translateY(8px) scale(1.08); }
+  100% { transform: translateY(0) scale(1); }
+}
+#floaty-random {
+  animation-name: floaty-random;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 /* Remove absolute positioning for floaties used as carousel dots */
@@ -773,7 +796,7 @@ nav a:hover .nav-fill {
   margin-bottom: 0.7rem;
 }
 .skill-modal-link {
-  color: var(--color-pink) !important;
+  color: var(--color-deep-deep-yellow) !important;
   text-decoration: underline;
   font-weight: 700;
 }
@@ -781,16 +804,8 @@ nav a:hover .nav-fill {
   color: var(--color-deep-yellow) !important;
 }
 .skill-modal-link:hover {
-  color: var(--color-deep-yellow) !important;
+  color: var(--color-hotpink) !important;
   text-decoration: underline;
-  margin: 0 0.3rem;
-}
-.skill-modal-link:hover {
-  color: var(--color-deep-yellow) !important;
-}
-
-.skill-modal-links a:hover {
-  color: var(--color-deep-yellow);
 }
 
 .skill-logo{
@@ -874,13 +889,24 @@ nav a:hover .nav-fill {
     0 3px 8px var(--color-light-pink-border),      /* light pink drop shadow */
     inset 0 0 0 7px var(--color-hotpink); /* pink inset border */
 }
+
+@keyframes butterfly-float {
+  0%   { transform: translateY(20px) rotate(0deg); }
+  25%  { transform: translateX(-10px) translateY(0px) rotate(-10deg); }
+  50%  { transform: translateY(-20px) rotate(-5deg); }
+  75%  { transform: translateX(10px) translateY(0px) rotate(10deg); }
+  100% { transform: translateY(20px) rotate(0deg); }
+  
+}
 .butterfly{
   position:absolute;
+  animation: butterfly-float 8s ease-in-out infinite;
 }
 
 .half-flower{
   position:absolute;
   overflow:hidden;
+  animation: mini-flower 10s linear infinite;
 }
 
 
@@ -984,7 +1010,7 @@ header nav a{
 }
 
 .about-section2{
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 0px;
   margin-top: 0px;
   margin-bottom: 0;
@@ -1106,7 +1132,6 @@ header nav a{
 }
 
 }
-
 
 
 @media (min-width: 768px) and (max-width: 991px) {
