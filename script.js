@@ -3,18 +3,27 @@ const musicBtn = document.getElementById('music-button');
 const musicIcon = musicBtn.querySelector('img');
 const audio = document.getElementById('audio-player');
 audio.loop = true;
-let isPlaying = false;     
+let isPlaying = true;    
+musicIcon.src = 'static/music on.svg'; 
 // Play audio on page load
+window.addEventListener('DOMContentLoaded', function() {
+  audio.play().catch(() => {
+    // Autoplay blocked, show music off icon
+    musicIcon.src = 'static/music off.svg';
+    isPlaying = false;
+  });
+});
 
 musicBtn.addEventListener('click', () => {
   if (isPlaying) {
-    audio.play();
-    musicIcon.src = 'static/music on.svg';
-  } else {
     audio.pause();
     musicIcon.src = 'static/music off.svg';
+    isPlaying = false;
+  } else {
+    audio.play();
+    musicIcon.src = 'static/music on.svg';
+    isPlaying = true;
   }
-  isPlaying = !isPlaying;
 });
 
 // Theme button
