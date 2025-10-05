@@ -46,7 +46,7 @@ const projects = [
   },
   {
     title: "LoveBeatz",
-    image: 'static/lovebeatz image .png',
+    image: 'static/lovebeatz image.gif',
     desc: 'This heart-themed rhythm visualizer created using <span class="about-yellow">p5.js</span>, <span class="about-yellow">HTML</span>, and <span class="about-yellow">CSS</span> responds dynamically to music using <span class="about-yellow">p5.fft</span>. ' +
           'The central heart pulses to a song’s <span class="about-yellow">mid-frequency</span> energies, while the waveform and floating ' +
           'heart particles react in real time, with interactive hearts that pop and respawn.',
