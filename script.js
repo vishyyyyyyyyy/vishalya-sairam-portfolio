@@ -50,15 +50,18 @@ const projects = [
     image: 'static/cozy cat planner gif.gif',
     desc: 'A <span class="about-yellow">full-stack</span> desktop planner made with <span class="about-yellow">Electron</span> that tracks todos + events and features a customizable cat avatar that saves session data. ' +
           'Designed in <span class="about-yellow">Figma</span>, the app includes animated backgrounds and timed pop-up messages for a playful, engaging experience. ' +
-          'It’s the perfect organizer for college students who want to have a cute but functional planner while staying productive.',
-    link: 'https://github.com/vishyyyyyyyyy/cozy-cat-planner'
+          'It’s the perfect organizer for college students who want to have a cute but functional planner while staying productive. <br>' +
+          '<a href="https://github.com/vishyyyyyyyyy/cozy-cat-planner" target="_blank" class="skill-modal-link" style="margin-right:10px;">GitHub Link</a>',
+          link: 'https://github.com/vishyyyyyyyyy/cozy-cat-planner'
   },
   {
     title: "LoveBeatz",
     image: 'static/lovebeatz image.gif',
     desc: 'This heart-themed rhythm visualizer created using <span class="about-yellow">p5.js</span>, <span class="about-yellow">HTML</span>, and <span class="about-yellow">CSS</span> responds dynamically to music using <span class="about-yellow">p5.fft</span>. ' +
           'The central heart pulses to a song’s <span class="about-yellow">mid-frequency</span> energies, while the waveform and floating ' +
-          'heart particles react in real time, with interactive hearts that pop and respawn.',
+          'heart particles react in real time, with interactive hearts that pop and respawn.<br>' +
+          '<a href="https://github.com/vishyyyyyyyyy/lovebeatz-rhythm-visualizer" target="_blank" class="skill-modal-link" style="margin-right:10px;">GitHub Link</a>' +
+          '<a href="https://www.codedex.io/bb6jD421cUM8OEhhmSgN/live" target="_blank" class="skill-modal-link">Live Demo Link</a>',
     link: 'https://www.codedex.io/bb6jD421cUM8OEhhmSgN/live'
   },
 
@@ -66,9 +69,11 @@ const projects = [
     title: "Cupid's Kitchen",
     image: "static/cupids kitchen gif.gif",
     desc: 'Cupid’s Kitchen is a fictional restaurant menu website where users can order dishes infused with love to share with a special someone. ' +
-        'This site features interactive scroll features and elements, ' +
-        'an order section with multiple input types, and a easter egg in the checkout process. ' +
-        'Built with <span class="about-yellow">HTML</span>, <span class="about-yellow">CSS</span>, and <span class="about-yellow">JavaScript</span>, and designed in <span class="about-yellow">Figma</span>, the project highlights interactive design and creative UI elements.',
+  'This site features interactive scroll features and elements, ' +
+  'an order section with multiple input types, and a easter egg in the checkout process. ' +
+  'Built with <span class="about-yellow">HTML</span>, <span class="about-yellow">CSS</span>, and <span class="about-yellow">JavaScript</span>, and designed in <span class="about-yellow">Figma</span>, the project highlights interactive design and creative UI elements.<br>' +
+  '<a href="https://github.com/vishyyyyyyyyy/restraunt-menu" target="_blank" class="skill-modal-link" style="margin-right:10px;">GitHub Link</a>' +
+  '<a href="https://vishyyyyyyyyy.github.io/restraunt-menu/" target="_blank" class="skill-modal-link">Live Demo Link</a>',
     link: 'https://vishyyyyyyyyy.github.io/restraunt-menu/'
   },
 
@@ -79,7 +84,9 @@ const projects = [
     'once stole from the poor but decides to use his skills to help the forest community. ' +
     'Players explore different scenes, collect stolen treasures to restore balance, ' +
     'and avoid getting caught while experiencing <span class="about-yellow">animated</span> characters, timed text, and <span class="about-yellow">collision-triggered</span> scene transitions. ' +
-    'Built with <span class="about-yellow">Godot 4.x</span>, <span class="about-yellow">GDScript</span> and visuals created in <span class="about-yellow">Aesprite</span>, the project demonstrates scene-based progression, physics interactions, and interactive storytelling.',
+    'Built with <span class="about-yellow">Godot 4.x</span>, <span class="about-yellow">GDScript</span> and visuals created in <span class="about-yellow">Aesprite</span>, the project demonstrates scene-based progression, physics interactions, and interactive storytelling. <br>' +
+          '<a href="https://github.com/vishyyyyyyyyy/Bearly-A-Hero" target="_blank" class="skill-modal-link" style="margin-right:10px;">GitHub Link</a>' +
+          '<a href="https://vishyyyyyyyyy.itch.io/bear-ly-a-hero" target="_blank" class="skill-modal-link">Live Demo Link</a>',
     link: 'https://vishyyyyyyyyy.itch.io/bear-ly-a-hero'
   },
   // Add more projects as needed
