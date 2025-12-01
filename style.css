@@ -142,7 +142,7 @@ nav a:hover .nav-fill {
   color: var(--color-deep-yellow);
   margin: 0;
   position: absolute;
-  left: 0.06em;
+  left: 0.1em;
   z-index: 0;
   pointer-events: none;
   user-select: none;
@@ -222,6 +222,7 @@ nav a:hover .nav-fill {
   /* padding-left:40px; */
   color: var(--color-deep-deep-yellow);
   font-size: clamp(0.5rem, 2vw, 1.3rem);
+  font-weight: 900;
   
 
 }
@@ -401,7 +402,7 @@ nav a:hover .nav-fill {
 }
 .about-yellow {
   color: var(--color-deep-yellow);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .about-content{
@@ -595,6 +596,7 @@ nav a:hover .nav-fill {
   height: auto;
   box-sizing: border-box;
   display: flex;
+  font-weight: 700;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
@@ -666,6 +668,7 @@ nav a:hover .nav-fill {
 .project-title{
   font-size: 2rem;
   text-decoration: underline;
+  font-weight: 900;
 }
 .project-circles{
   position:relative;
@@ -717,12 +720,12 @@ nav a:hover .nav-fill {
   margin: 0;
 }
 .skills-subtitle{
-  font-size: 1rem;
-  color: #694842;
+  font-size: 1.3rem;
+  color: #322725;
   font-family: var(--font-family);
   font-weight: 700;
   text-align: center;
-  top:365px;
+  top:360px;
   margin-bottom: -20px;
   position: absolute;
 }
