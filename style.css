@@ -795,6 +795,7 @@ nav a:hover .nav-fill {
   color: var(--color-pink);
   margin-bottom: 1.2rem;
   line-height: 2;
+  font-weight:700;
 }
 
 .skill-modal-cert {
