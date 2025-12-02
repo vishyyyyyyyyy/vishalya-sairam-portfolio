@@ -142,8 +142,9 @@ nav a:hover .nav-fill {
   color: var(--color-deep-yellow);
   margin: 0;
   position: absolute;
-  left: 0.1em;
+  left: 0;
   z-index: 0;
+  opacity: 0;
   pointer-events: none;
   user-select: none;
   font-size: clamp(2rem, 8vw, 8rem);
