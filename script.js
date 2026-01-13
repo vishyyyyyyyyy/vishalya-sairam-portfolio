@@ -37,12 +37,6 @@ themeBtn.addEventListener('click', () => {
   darkMode = !darkMode;
 });
 
-// Resume button
-const resumeBtn = document.getElementById('resume-button');
-resumeBtn.addEventListener('click', () => {
-  window.open('Vishalya_Sairam_Resume_2025.pdf', '_blank');
-});
-
 
 const projects = [
   {
