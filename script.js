@@ -1,4 +1,4 @@
-// Music button
+// Music button 
 const musicBtn = document.getElementById('music-button');
 const musicIcon = musicBtn.querySelector('img');
 const audio = document.getElementById('audio-player');
