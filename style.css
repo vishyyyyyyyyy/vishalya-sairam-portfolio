@@ -407,7 +407,7 @@ nav a:hover .nav-fill {
   color: var(--color-pink);
   font-family: var(--font-family);
   font-weight: 700;
-  text-align: left;
+  text-align: center;
   line-height:2;
   text-align:center;
 }
@@ -758,7 +758,7 @@ nav a:hover .nav-fill {
   gap: 20px;
 }
 .project-text{
-  text-align: left;
+  text-align: center;
 }
 .project-dot{
   display:inline-flex;

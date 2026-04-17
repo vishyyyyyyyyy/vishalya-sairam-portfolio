@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Cozy Cat Planner",
     image: 'static/cozy cat planner gif.gif',
-    desc: 'A cozy desktop productivity app that helps users organize tasks in a calming, cat-themed environment. Built with Electron for a seamless cross-platform experience.',
+    desc: 'A cozy desktop productivity app that helps users organize tasks, events and to-dos with a dress-up-able cat! Built with Electron for a seamless cross-platform experience.',
     tags: ['fullstack','electron','javascript'],
     link: ['https://github.com/vishyyyyyyyyy/cozy-cat-planner']
   },
@@ -57,14 +57,14 @@ const projects = [
   {
     title: "Cupid's Kitchen",
     image: "static/cupids kitchen gif.gif",
-    desc: 'A playful restaurant menu interface with interactive item selection and smooth UI transitions, designed to create an engaging browsing experience.',
+    desc: 'A fictional restaurant menu website where users can order dishes infused with different levels of love. Each dish is designed to be shared with a love interest. Once a love interest has consumed the food, they will instantly fall in love with you.',
     tags: ['frontend','javascript'],
     link: ['https://vishyyyyyyyyy.github.io/restraunt-menu/', 'https://github.com/vishyyyyyyyyy/restraunt-menu']
   },
   {
     title: "Before I Fade",
     image: 'static/b4ifade.png',
-    desc: 'A narrative-driven game exploring memory and identity through atmospheric visuals and puzzle-based storytelling.',
+    desc: 'A 2D visual novel where you play as a ghost, waking up exactly 1 month after your death. Created with Godot and GDScript, the game dives into puzzle mechanics and narrative storytelling, along with visual effects. It’s a project very close to my heart, inspired by my love for storytelling and pixel art games.',
     tags: ['game dev'],
     link: ['https://vishyyyyyyyyy.itch.io/before-i-fade', 'https://github.com/vishyyyyyyyyy/before-I-fade']
   },
@@ -72,7 +72,7 @@ const projects = [
   {
     title: "BEARly a Hero",
     image: 'static/bearly a hero cover.png',
-    desc: 'A pixel-art stealth game following a morally conflicted bear who evolves from thief to hero, blending storytelling with gameplay mechanics.',
+    desc: 'A pixel-art stealth game, built in Godot where players sneak through levels, avoid detection, and make choices that shift the story from selfish to selfless.',
     tags: ['game dev'],
     link: ['https://vishyyyyyyyyy.itch.io/bear-ly-a-hero', 'https://github.com/vishyyyyyyyyy/Bearly-A-Hero']
   },
@@ -86,7 +86,7 @@ const projects = [
   {
     title: "Candy Hearts",
     image: 'static/valentine.jpeg',
-   desc: 'A fun, interactive Valentine’s-themed web app featuring dynamic candy heart messages and playful UI interactions.',
+   desc: 'A small valentines day project made for my boyfriend. Created with dynamic JavaScript DOM maniputlation, Candy hearts is a interactive experience wher you open a box of sweethears and eat them all to reveal a suprise :)',
     tags: ['frontend', 'javascript'],
     link: ['https://github.com/vishyyyyyyyyy/valentine-s-day-candy-hearts', 'https://valentine-s-day-candy-hearts.vercel.app/']
   },
@@ -100,14 +100,14 @@ const projects = [
   {
     title: "Punch Data Analysis",
     image: 'static/punch.jpeg',
-    desc: 'A data analysis project exploring viral trends using Python, Pandas, and Matplotlib, uncovering patterns behind online engagement.',
+    desc: 'A deep dive into how one tiny monkey took over the internet. Using Python and data analysis, this project explores how viral trends spread and why people can’t stop watching.',
     tags: ['data science', 'python','pandas','matplotlib'],
     link: ['https://colab.research.google.com/drive/1F2e9pVWdCX9mxPVnE3aGtbj3Nlixeco9?usp=sharing', 'https://www.figma.com/deck/Zt9Q1GH93LAziYfKSOlAp5/How-Did-One-Baby-Monkey-Influence-the-Internet-and-the-Real-World-?node-id=1-42&t=kIQiU3QxNIgMHpsS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1']
   },
   {
     title: "ToyoQuest",
     image: 'static/toyoquest.jpeg',
-    desc: 'An AI-powered interactive application that combines storytelling and user input to create a personalized and engaging experience.',
+    desc: 'An AI-powered interactive application that combines storytelling and user input to help first time car buyers make informed decisions.',
     tags: ['fullstack', 'python', 'react', 'ai'],
     link: 'https://github.com/vishyyyyyyyyy/ToyoQuest'
   },
