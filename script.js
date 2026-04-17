@@ -42,14 +42,14 @@ const projects = [
   {
     title: "Cozy Cat Planner",
     image: 'static/cozy cat planner gif.gif',
-    desc: ' ',
+    desc: 'A cozy desktop productivity app that helps users organize tasks in a calming, cat-themed environment. Built with Electron for a seamless cross-platform experience.',
     tags: ['fullstack','electron','javascript'],
     link: ['https://github.com/vishyyyyyyyyy/cozy-cat-planner']
   },
   {
     title: "LoveBeatz",
     image: 'static/lovebeatz image.gif',
-    desc: ' ',
+    desc: 'An interactive rhythm visualizer that transforms music into dynamic visuals. Built with p5.js to explore the connection between sound, timing, and animation.',
     tags: ['frontend','p5.js'],
     link: ['https://www.codedex.io/bb6jD421cUM8OEhhmSgN/live', 'https://github.com/vishyyyyyyyyy/lovebeatz-rhythm-visualizer']
   },
@@ -57,14 +57,14 @@ const projects = [
   {
     title: "Cupid's Kitchen",
     image: "static/cupids kitchen gif.gif",
-    desc: ' ',
+    desc: 'A playful restaurant menu interface with interactive item selection and smooth UI transitions, designed to create an engaging browsing experience.',
     tags: ['frontend','javascript'],
     link: ['https://vishyyyyyyyyy.github.io/restraunt-menu/', 'https://github.com/vishyyyyyyyyy/restraunt-menu']
   },
   {
     title: "Before I Fade",
     image: 'static/b4ifade.png',
-    desc: ' ', 
+    desc: 'A narrative-driven game exploring memory and identity through atmospheric visuals and puzzle-based storytelling.',
     tags: ['game dev'],
     link: ['https://vishyyyyyyyyy.itch.io/before-i-fade', 'https://github.com/vishyyyyyyyyy/before-I-fade']
   },
@@ -72,42 +72,42 @@ const projects = [
   {
     title: "BEARly a Hero",
     image: 'static/bearly a hero cover.png',
-    desc: ' ',
+    desc: 'A pixel-art stealth game following a morally conflicted bear who evolves from thief to hero, blending storytelling with gameplay mechanics.',
     tags: ['game dev'],
     link: ['https://vishyyyyyyyyy.itch.io/bear-ly-a-hero', 'https://github.com/vishyyyyyyyyy/Bearly-A-Hero']
   },
   {
     title: "Fate Framed",
     image: 'static/fateframed.png',
-    desc: ' ',
+    desc: 'A narrative-driven risk assessment experience that transforms complex data into an interactive storytelling journey for first-time users.',
     tags: ['fullstack','ai', 'javascript', 'python'],
     link: ['https://vishyyyyyyyyy.itch.io/before-i-fade', 'https://web-production-8abdd.up.railway.app/']
   },
   {
     title: "Candy Hearts",
     image: 'static/valentine.jpeg',
-    desc: ' ',
+   desc: 'A fun, interactive Valentine’s-themed web app featuring dynamic candy heart messages and playful UI interactions.',
     tags: ['frontend', 'javascript'],
     link: ['https://github.com/vishyyyyyyyyy/valentine-s-day-candy-hearts', 'https://valentine-s-day-candy-hearts.vercel.app/']
   },
   {
     title: "MAIpos",
     image: 'static/maipos.png',
-    desc: ' ',
+    desc: 'A full-stack restaurant POS system with dynamic table management, order tracking, and intuitive UI designed for fast-paced environments.', 
     tags: ['fullstack','react','ai'],
     link: ['https://maipos.vercel.app/', 'https://github.com/vishyyyyyyyyy/mai-shan-yun-tabler']
   },
   {
     title: "Punch Data Analysis",
     image: 'static/punch.jpeg',
-    desc: ' ',
+    desc: 'A data analysis project exploring viral trends using Python, Pandas, and Matplotlib, uncovering patterns behind online engagement.',
     tags: ['data science', 'python','pandas','matplotlib'],
     link: ['https://colab.research.google.com/drive/1F2e9pVWdCX9mxPVnE3aGtbj3Nlixeco9?usp=sharing', 'https://www.figma.com/deck/Zt9Q1GH93LAziYfKSOlAp5/How-Did-One-Baby-Monkey-Influence-the-Internet-and-the-Real-World-?node-id=1-42&t=kIQiU3QxNIgMHpsS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1']
   },
   {
     title: "ToyoQuest",
     image: 'static/toyoquest.jpeg',
-    desc: ' ',
+    desc: 'An AI-powered interactive application that combines storytelling and user input to create a personalized and engaging experience.',
     tags: ['fullstack', 'python', 'react', 'ai'],
     link: 'https://github.com/vishyyyyyyyyy/ToyoQuest'
   },
