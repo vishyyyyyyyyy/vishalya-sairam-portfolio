@@ -34,6 +34,12 @@
 html
  {
   scroll-behavior: smooth;
+  .cta-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+  }
 }
 
 
@@ -661,8 +667,75 @@ nav a:hover .nav-fill {
   animation: mini-flower 5s ease-in-out infinite;
 }
 
-.project-title, .project-text {
+.project-title {
   text-align:center;
+}
+
+/* Project tag badges */
+.project-tags{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+.project-tag{
+  background: var(--color-pink);
+  color: var(--bg-color);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(238,110,147,0.14);
+}
+.dark-mode .project-tag{
+  background: var(--color-deep-deep-yellow);
+  color: #270637;
+}
+
+/* View all / Filters */
+.projects-controls{
+  margin-top: 22px;
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  /* keep controls aligned with project content width */
+  width: min(1160px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-filters{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.filter-chip{
+  background: transparent;
+  border: 2px solid var(--color-hotpink);
+  color: var(--color-hotpink);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.filter-chip.active{
+  background:var(--color-hotpink);
+  color:var(--bg-color);
+}
+.filter-chip:hover{
+  scale: 1.1;
+}
+
+
+@media (max-width: 860px){
+  .projects-container{flex-direction:column; gap:20px}
+  .projects-grid{margin-top:14px}
 }
 
 .project-text{
@@ -684,6 +757,65 @@ nav a:hover .nav-fill {
   top:30px;
   gap: 20px;
 }
+.project-text{
+  text-align: left;
+}
+.project-dot{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background: var(--color-pink);
+  box-shadow: 0 0 8px var(--color-hotpink);
+  cursor:pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+.project-dot:hover{
+  transform:scale(1.08);
+}
+.project-dot.active-dot{
+  background: var(--color-green);
+ box-shadow: 0 0 8px var(--color-green-shadow);
+}
+/* project cta links */
+.projects-desc .project-tags{
+  justify-content:center;
+  margin-bottom:12px
+}
+.projects-desc .project-cta{
+  display:flex;
+  gap:12px;
+  margin-top:12px;
+}
+.projects-desc .cta-btn{
+  padding:8px 14px;
+  border-radius:999px;
+  font-weight:900;
+  text-decoration:none;
+  display:inline-block;
+}
+.projects-desc .cta-github{
+  background:var(--color-hotpink);
+  color:var(--color-baby-yellow);
+}
+.cta-github:hover{
+  scale: 1.03;
+  border: var(--color-hotpink) 3px solid;
+  background:var(--color-baby-yellow);
+  color: var(--color-hotpink);
+
+}
+.cta-demo:hover{
+  scale: 1.03;
+  border: var(--color-hotpink) 3px solid;
+  background:var(--color-baby-yellow);
+  color: var(--color-hotpink);
+}
+.projects-desc .cta-demo{
+  background:var(--color-hotpink);
+  color:var(--color-baby-yellow);
+}
+
 .skills-section {
   margin-top: 50px;
   display: flex;
@@ -708,7 +840,7 @@ nav a:hover .nav-fill {
   0%   { transform: translateY(0) scale(1); }
   20%  { transform: translateY(-8px) scale(0.95); }
   40%  { transform: translateY(4px) scale(1.05); }
-  60%  { transform: translateY(-12px) scale(0.92); }
+  60%  { transform: translateY(-10px) scale(0.92); }
   80%  { transform: translateY(8px) scale(1.08); }
   100% { transform: translateY(0) scale(1); }
 }

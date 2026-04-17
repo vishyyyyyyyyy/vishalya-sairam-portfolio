@@ -42,77 +42,196 @@ const projects = [
   {
     title: "Cozy Cat Planner",
     image: 'static/cozy cat planner gif.gif',
-    desc: 'A <span class="about-yellow">full-stack</span> desktop planner made with <span class="about-yellow">Electron</span> that tracks todos + events and features a customizable cat avatar that saves session data. ' +
-          'Designed in <span class="about-yellow">Figma</span>, the app includes animated backgrounds and timed pop-up messages for a playful, engaging experience. ' +
-          'It’s the perfect organizer for college students who want to have a cute but functional planner while staying productive. <br>' +
-          '<a href="https://github.com/vishyyyyyyyyy/cozy-cat-planner" target="_blank" class="skill-modal-link" style="margin-right:10px;">GitHub Link</a>',
-          link: 'https://github.com/vishyyyyyyyyy/cozy-cat-planner'
+    desc: ' ',
+    tags: ['fullstack','electron','javascript'],
+    link: ['https://github.com/vishyyyyyyyyy/cozy-cat-planner']
   },
   {
     title: "LoveBeatz",
     image: 'static/lovebeatz image.gif',
-    desc: 'This heart-themed rhythm visualizer created using <span class="about-yellow">p5.js</span>, <span class="about-yellow">HTML</span>, and <span class="about-yellow">CSS</span> responds dynamically to music using <span class="about-yellow">p5.fft</span>. ' +
-          'The central heart pulses to a song’s <span class="about-yellow">mid-frequency</span> energies, while the waveform and floating ' +
-          'heart particles react in real time, with interactive hearts that pop and respawn.<br>' +
-          '<a href="https://github.com/vishyyyyyyyyy/lovebeatz-rhythm-visualizer" target="_blank" class="skill-modal-link" style="margin-right:10px;">GitHub Link</a>' +
-          '<a href="https://www.codedex.io/bb6jD421cUM8OEhhmSgN/live" target="_blank" class="skill-modal-link">Live Demo Link</a>',
-    link: 'https://www.codedex.io/bb6jD421cUM8OEhhmSgN/live'
+    desc: ' ',
+    tags: ['frontend','p5.js'],
+    link: ['https://www.codedex.io/bb6jD421cUM8OEhhmSgN/live', 'https://github.com/vishyyyyyyyyy/lovebeatz-rhythm-visualizer']
   },
 
   {
     title: "Cupid's Kitchen",
     image: "static/cupids kitchen gif.gif",
-    desc: 'Cupid’s Kitchen is a fictional restaurant menu website where users can order dishes infused with love to share with a special someone. ' +
-  'This site features interactive scroll features and elements, ' +
-  'an order section with multiple input types, and a easter egg in the checkout process. ' +
-  'Built with <span class="about-yellow">HTML</span>, <span class="about-yellow">CSS</span>, and <span class="about-yellow">JavaScript</span>, and designed in <span class="about-yellow">Figma</span>, the project highlights interactive design and creative UI elements.<br>' +
-  '<a href="https://github.com/vishyyyyyyyyy/restraunt-menu" target="_blank" class="skill-modal-link" style="margin-right:10px;">GitHub Link</a>' +
-  '<a href="https://vishyyyyyyyyy.github.io/restraunt-menu/" target="_blank" class="skill-modal-link">Live Demo Link</a>',
-    link: 'https://vishyyyyyyyyy.github.io/restraunt-menu/'
+    desc: ' ',
+    tags: ['frontend','javascript'],
+    link: ['https://vishyyyyyyyyy.github.io/restraunt-menu/', 'https://github.com/vishyyyyyyyyy/restraunt-menu']
+  },
+  {
+    title: "Before I Fade",
+    image: 'static/b4ifade.png',
+    desc: ' ', 
+    tags: ['game dev'],
+    link: ['https://vishyyyyyyyyy.itch.io/before-i-fade', 'https://github.com/vishyyyyyyyyy/before-I-fade']
   },
 
   {
     title: "BEARly a Hero",
     image: 'static/bearly a hero cover.png',
-    desc: 'BEARly a Hero is a 2D game where you play as a mischievous bear who ' +
-    'once stole from the poor but decides to use his skills to help the forest community. ' +
-    'Players explore different scenes, collect stolen treasures to restore balance, ' +
-    'and avoid getting caught while experiencing <span class="about-yellow">animated</span> characters, timed text, and <span class="about-yellow">collision-triggered</span> scene transitions. ' +
-    'Built with <span class="about-yellow">Godot 4.x</span>, <span class="about-yellow">GDScript</span> and visuals created in <span class="about-yellow">Aesprite</span>, the project demonstrates scene-based progression, physics interactions, and interactive storytelling. <br>' +
-          '<a href="https://github.com/vishyyyyyyyyy/Bearly-A-Hero" target="_blank" class="skill-modal-link" style="margin-right:10px;">GitHub Link</a>' +
-          '<a href="https://vishyyyyyyyyy.itch.io/bear-ly-a-hero" target="_blank" class="skill-modal-link">Live Demo Link</a>',
-    link: 'https://vishyyyyyyyyy.itch.io/bear-ly-a-hero'
+    desc: ' ',
+    tags: ['game dev'],
+    link: ['https://vishyyyyyyyyy.itch.io/bear-ly-a-hero', 'https://github.com/vishyyyyyyyyy/Bearly-A-Hero']
   },
-  // Add more projects as needed
+  {
+    title: "Fate Framed",
+    image: 'static/fateframed.png',
+    desc: ' ',
+    tags: ['fullstack','ai', 'javascript', 'python'],
+    link: ['https://vishyyyyyyyyy.itch.io/before-i-fade', 'https://web-production-8abdd.up.railway.app/']
+  },
+  {
+    title: "Candy Hearts",
+    image: 'static/valentine.jpeg',
+    desc: ' ',
+    tags: ['frontend', 'javascript'],
+    link: ['https://github.com/vishyyyyyyyyy/valentine-s-day-candy-hearts', 'https://valentine-s-day-candy-hearts.vercel.app/']
+  },
+  {
+    title: "MAIpos",
+    image: 'static/maipos.png',
+    desc: ' ',
+    tags: ['fullstack','react','ai'],
+    link: ['https://maipos.vercel.app/', 'https://github.com/vishyyyyyyyyy/mai-shan-yun-tabler']
+  },
+  {
+    title: "Punch Data Analysis",
+    image: 'static/punch.jpeg',
+    desc: ' ',
+    tags: ['data science', 'python','pandas','matplotlib'],
+    link: ['https://colab.research.google.com/drive/1F2e9pVWdCX9mxPVnE3aGtbj3Nlixeco9?usp=sharing', 'https://www.figma.com/deck/Zt9Q1GH93LAziYfKSOlAp5/How-Did-One-Baby-Monkey-Influence-the-Internet-and-the-Real-World-?node-id=1-42&t=kIQiU3QxNIgMHpsS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1']
+  },
+  {
+    title: "ToyoQuest",
+    image: 'static/toyoquest.jpeg',
+    desc: ' ',
+    tags: ['fullstack', 'python', 'react', 'ai'],
+    link: 'https://github.com/vishyyyyyyyyy/ToyoQuest'
+  },
+ 
 ];
 
 let currentProject = 0;
+let filteredProjects = projects.slice();
+
+// Helper: extract github/demo/primary links from project (supports string or array)
+function getLinksFromProject(p) {
+  let githubURL = null;
+  let demoURL = null;
+  // parse anchors from desc first
+  const tmp = document.createElement('div');
+  tmp.innerHTML = p.desc || '';
+  Array.from(tmp.querySelectorAll('a')).forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href) return;
+    if (href.includes('github.com')) githubURL = githubURL || href;
+    else demoURL = demoURL || href;
+  });
+  // then check p.link (supports string or array)
+  if (p.link) {
+    if (Array.isArray(p.link)) {
+      p.link.forEach(h => {
+        if (!h) return;
+        if (typeof h === 'string') {
+          if (h.includes('github.com')) githubURL = githubURL || h;
+          else demoURL = demoURL || h;
+        }
+      });
+    } else if (typeof p.link === 'string') {
+      if (p.link.includes('github.com')) githubURL = githubURL || p.link;
+      else demoURL = demoURL || p.link;
+    }
+  }
+  const primary = demoURL || githubURL || (Array.isArray(p.link) ? p.link[0] : (typeof p.link === 'string' ? p.link : null));
+  return { githubURL, demoURL, primary };
+}
 
 function showProject(index) {
-  document.querySelector('.projects-view').style.backgroundImage = "url('" + projects[index].image + "')";
-  document.querySelector('.project-text').innerHTML = projects[index].desc;
-  document.querySelector('.project-title').innerHTML = `<a href="${projects[index].link}" target="_blank" style="text-decoration:none;color:inherit;">${projects[index].title}</a>`;
+  const p = filteredProjects[index];
+  const view = document.querySelector('.projects-view');
+  const titleEl = document.querySelector('.project-title');
+  const textEl = document.querySelector('.project-text');
+  const tagsContainer = document.querySelector('.project-tags');
+  if (!p) {
+    view.style.backgroundImage = 'none';
+    titleEl.innerHTML = 'No projects';
+    textEl.innerHTML = '<p style="text-align:center; width:100%">No projects match the selected filters.</p>';
+    if (tagsContainer) tagsContainer.innerHTML = '';
+    return;
+  }
 
-  // Highlight the current project circle
-  const circles = document.querySelectorAll('.project-circles .pink-floaty, .project-circles .green-floaty');
-  circles.forEach((circle, i) => {
-    if (i === index) {
-      circle.classList.remove('pink-floaty');
-      circle.classList.add('green-floaty');
-    } else {
-      circle.classList.remove('green-floaty');
-      circle.classList.add('pink-floaty');
+  view.style.backgroundImage = p.image ? "url('" + p.image + "')" : 'none';
+  textEl.innerHTML = p.desc || '';
+
+  // Title: link to primary (demo preferred) when available
+  const links = getLinksFromProject(p);
+  if (links.primary) {
+    titleEl.innerHTML = `<a href="${links.primary}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">${p.title}</a>`;
+  } else {
+    titleEl.textContent = p.title;
+  }
+
+  // Render tags and make them interactive
+  if (tagsContainer) {
+    const tags = p.tags || [];
+    tagsContainer.innerHTML = tags.map(t => `<span class="project-tag" data-tag="${t}" tabindex="0" role="button">#${t}</span>`).join('');
+    tagsContainer.querySelectorAll('.project-tag').forEach(el => {
+      const tag = el.dataset.tag;
+      const chip = document.querySelector(`.filter-chip[data-tag="${tag}"]`);
+      const handle = () => {
+        if (chip) {
+          toggleFilter(tag, chip);
+        } else {
+          if (selectedFilters.has(tag)) selectedFilters.delete(tag);
+          else selectedFilters.add(tag);
+          updateFilteredProjectsAndUI();
+        }
+      };
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', handle);
+      el.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); handle(); }
+      });
+    });
+  }
+
+  // Render CTAs (GitHub / Live Demo)
+  const descContainer = document.querySelector('.projects-desc');
+  if (descContainer) {
+    let ctaDiv = descContainer.querySelector('.project-cta');
+    if (!ctaDiv) {
+      ctaDiv = document.createElement('div');
+      ctaDiv.className = 'project-cta';
+      const mini = descContainer.querySelector('.mini-flower');
+      if (mini) descContainer.insertBefore(ctaDiv, mini);
+      else descContainer.appendChild(ctaDiv);
     }
-  });
+    const links2 = getLinksFromProject(p);
+    const externalIcon = `<svg class="cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>`;
+    const parts = [];
+    if (links2.githubURL) parts.push(`<a class="cta-btn cta-github" href="${links2.githubURL}" target="_blank" rel="noopener noreferrer">GitHub ${externalIcon}</a>`);
+    if (links2.demoURL) parts.push(`<a class="cta-btn cta-demo" href="${links2.demoURL}" target="_blank" rel="noopener noreferrer">Live Demo ${externalIcon}</a>`);
+    ctaDiv.innerHTML = parts.join('');
+    ctaDiv.style.display = parts.length ? 'flex' : 'none';
+  }
+
+  // Update dots
+  const circles = document.querySelectorAll('.project-circles .project-dot');
+  circles.forEach((circle, i) => circle.classList.toggle('active-dot', i === index));
 }
 
 // Arrow event listeners
 document.querySelector('.right-arrow-container').addEventListener('click', () => {
-  currentProject = (currentProject + 1) % projects.length;
+  if (filteredProjects.length === 0) return;
+  currentProject = (currentProject + 1) % filteredProjects.length;
   showProject(currentProject);
 });
 document.querySelector('.left-arrow-container').addEventListener('click', () => {
-  currentProject = (currentProject - 1 + projects.length) % projects.length;
+  if (filteredProjects.length === 0) return;
+  currentProject = (currentProject - 1 + filteredProjects.length) % filteredProjects.length;
   showProject(currentProject);
 });
 
@@ -122,7 +241,11 @@ showProject(currentProject);
 document.querySelector('.projects-view').onclick = function(e) {
   // Prevent navigation if clicking on arrows
   if (e.target.closest('.left-arrow-container') || e.target.closest('.right-arrow-container')) return;
-  window.open(projects[currentProject].link, '_blank');
+  const p = filteredProjects[currentProject];
+  if (p) {
+    const href = getLinksFromProject(p).primary;
+    if (href) window.open(href, '_blank');
+  }
 };
 
 // --- Skill Modal Popup Logic ---
@@ -277,4 +400,161 @@ window.addEventListener('DOMContentLoaded', function() {
   
 
 
+});
+
+//Projects: View All + Tag Filters
+let selectedFilters = new Set();
+
+function getAllTags() {
+  const s = new Set();
+  projects.forEach(p => (p.tags || []).forEach(t => s.add(t)));
+  return Array.from(s);
+}
+
+function buildTagFilters() {
+  const container = document.getElementById('project-filters');
+  if (!container) return;
+  const tags = getAllTags();
+  container.innerHTML = '';
+  tags.forEach(tag => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.type = 'button';
+    btn.textContent = tag;
+    btn.dataset.tag = tag;
+    btn.setAttribute('aria-pressed','false');
+    btn.addEventListener('click', () => {
+      toggleFilter(tag, btn);
+    });
+    container.appendChild(btn);
+  });
+}
+
+function toggleFilter(tag, btn) {
+  if (selectedFilters.has(tag)) {
+    selectedFilters.delete(tag);
+    btn.classList.remove('active');
+    btn.setAttribute('aria-pressed','false');
+  } else {
+    selectedFilters.add(tag);
+    btn.classList.add('active');
+    btn.setAttribute('aria-pressed','true');
+  }
+  // Update filtered carousel and (if visible) the projects grid
+  updateFilteredProjectsAndUI();
+}
+
+function createProjectCardHTML(p) {
+
+  const tmp = document.createElement('div');
+  tmp.innerHTML = p.desc || '';
+  let text = tmp.textContent || tmp.innerText || '';
+  text = text.replace(/\s+/g, ' ').trim();
+  if (text.length > 160) text = text.slice(0,157) + '...';
+
+  const tagsHTML = (p.tags || []).map(t => `<span class="project-tag">#${t}</span>`).join(' ');
+
+  // Build safe CTAs (github / demo / fallback view) with inline icon
+  const viewIcon = `<svg class="cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>`;
+  tmp.innerHTML = p.desc || '';
+  const anchors = Array.from(tmp.querySelectorAll('a'));
+  let githubURL = null;
+  let demoURL = null;
+  anchors.forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href) return;
+    if (href.includes('github.com')) githubURL = href;
+    else if (!demoURL) demoURL = href;
+  });
+  // Fallback to p.link
+  if (!demoURL && p.link && !p.link.includes('github.com')) demoURL = p.link;
+  if (!githubURL && p.link && p.link.includes('github.com')) githubURL = p.link;
+
+  const ctaParts = [];
+  if (githubURL) ctaParts.push(`<a class="cta-btn cta-github" href="${githubURL}" target="_blank" rel="noopener noreferrer">GitHub ${viewIcon}</a>`);
+  if (demoURL) ctaParts.push(`<a class="cta-btn cta-demo" href="${demoURL}" target="_blank" rel="noopener noreferrer">Live Demo ${viewIcon}</a>`);
+  const normalized = getLinksFromProject(p);
+  const fallbackHref = normalized.demoURL || normalized.githubURL || normalized.primary;
+  const viewLink = ctaParts.join(' ') || (fallbackHref ? `<a class="cta-btn cta-view" href="${fallbackHref}" target="_blank" rel="noopener noreferrer">View ${viewIcon}</a>` : '');
+  return `
+    <div class="project-card">
+      <img src="${p.image}" alt="${p.title} screenshot" loading="lazy">
+      <div class="project-card-body">
+        <h3>${p.title}</h3>
+        <div class="project-card-tags">${tagsHTML}</div>
+        <p>${text}</p>
+        <div class="project-cta">${viewLink}</div>
+      </div>
+    </div>`;
+}
+
+function renderAllProjects() {
+  const container = document.getElementById('all-projects-grid');
+  if (!container) return;
+  const filters = Array.from(selectedFilters);
+  const filtered = projects.filter(p => {
+    if (filters.length === 0) return true;
+    const ptags = p.tags || [];
+    // show projects that match any selected tag
+    return ptags.some(t => filters.includes(t));
+  });
+  container.innerHTML = filtered.map(p => createProjectCardHTML(p)).join('') || '<p style="text-align:center; width:100%">No projects match that filter.</p>';
+  container.style.display = filtered.length ? 'grid' : 'none';
+}
+
+
+function initProjectGallery() {
+  buildTagFilters();
+}
+
+window.addEventListener('DOMContentLoaded', initProjectGallery);
+
+// --- Carousel dots / filtered list integration ---
+function getFilteredProjects() {
+  const filters = Array.from(selectedFilters);
+  if (filters.length === 0) return projects.slice();
+  return projects.filter(p => (p.tags||[]).some(t => filters.includes(t)));
+}
+
+function renderCarouselDots() {
+  const dotsContainer = document.querySelector('.project-circles');
+  if (!dotsContainer) return;
+  dotsContainer.innerHTML = '';
+  const count = filteredProjects.length || 0;
+  for (let i = 0; i < Math.max(count, 1); i++) {
+    const dot = document.createElement('div');
+    dot.className = 'project-dot pink-floaty';
+    dot.style.width = '20px';
+    dot.style.height = '20px';
+    dot.style.margin = '0 6px';
+    dot.dataset.index = i;
+    dot.addEventListener('click', (e) => {
+      const idx = Number(e.currentTarget.dataset.index);
+      if (idx < filteredProjects.length) {
+        currentProject = idx;
+        showProject(currentProject);
+      }
+    });
+    dotsContainer.appendChild(dot);
+  }
+}
+
+function updateFilteredProjectsAndUI() {
+  filteredProjects = getFilteredProjects();
+  currentProject = 0;
+  renderCarouselDots();
+  showProject(currentProject);
+  // Also refresh the all-projects grid if visible
+  const grid = document.getElementById('all-projects-grid');
+  if (grid && (grid.style.display === 'grid' || window.getComputedStyle(grid).display !== 'none')) {
+    renderAllProjects();
+  }
+}
+
+// (toggleFilter now directly calls updateFilteredProjectsAndUI)
+
+// initialize filteredProjects / dots on initial load
+window.addEventListener('DOMContentLoaded', () => {
+  filteredProjects = projects.slice();
+  renderCarouselDots();
 });
