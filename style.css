@@ -409,11 +409,12 @@ nav a:hover .nav-fill {
   font-weight: 700;
   text-align: center;
   line-height:2;
-  text-align:center;
+  text-align:left;
+  justify-content: center;
 }
 .about-yellow {
   color: var(--color-deep-yellow);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .about-content{
@@ -445,7 +446,7 @@ nav a:hover .nav-fill {
   top:30px;
   font-size: 1.5rem;
   line-height: 1.8;
-  text-align: center;
+  text-align: left;
 }
 
 

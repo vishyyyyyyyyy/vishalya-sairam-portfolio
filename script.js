@@ -47,28 +47,12 @@ const projects = [
     link: ['https://github.com/vishyyyyyyyyy/cozy-cat-planner']
   },
   {
-    title: "LoveBeatz",
-    image: 'static/lovebeatz image.gif',
-    desc: 'An interactive rhythm visualizer that transforms music into dynamic visuals. Built with p5.js to explore the connection between sound, timing, and animation.',
-    tags: ['frontend','p5.js'],
-    link: ['https://www.codedex.io/bb6jD421cUM8OEhhmSgN/live', 'https://github.com/vishyyyyyyyyy/lovebeatz-rhythm-visualizer']
-  },
-
-  {
-    title: "Cupid's Kitchen",
-    image: "static/cupids kitchen gif.gif",
-    desc: 'A fictional restaurant menu website where users can order dishes infused with different levels of love. Each dish is designed to be shared with a love interest. Once a love interest has consumed the food, they will instantly fall in love with you.',
-    tags: ['frontend','javascript'],
-    link: ['https://vishyyyyyyyyy.github.io/restraunt-menu/', 'https://github.com/vishyyyyyyyyy/restraunt-menu']
-  },
-  {
     title: "Before I Fade",
     image: 'static/b4ifade.png',
     desc: 'A 2D visual novel where you play as a ghost, waking up exactly 1 month after your death. Created with Godot and GDScript, the game dives into puzzle mechanics and narrative storytelling, along with visual effects. It’s a project very close to my heart, inspired by my love for storytelling and pixel art games.',
     tags: ['game dev'],
     link: ['https://vishyyyyyyyyy.itch.io/before-i-fade', 'https://github.com/vishyyyyyyyyy/before-I-fade']
   },
-
   {
     title: "BEARly a Hero",
     image: 'static/bearly a hero cover.png',
