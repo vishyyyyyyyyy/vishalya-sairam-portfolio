@@ -9,8 +9,6 @@
   }
 }
 
-
-/* Removed stray '!import' line */
 :root {
   --bg-color: #FFECAD;
   --dark-theme-bg: #270637;
@@ -636,83 +634,16 @@ nav a:hover .nav-fill {
   .projects-grid{margin-top:14px}
 }
 
-.project-text{
-  font-size: 1.2rem;
-  line-height:2;
-}
-
 .project-title{
   font-size: 2rem;
   text-decoration: underline;
   font-weight: 900;
 }
-.project-circles{
-  position:relative;
-  align-items: center;
-  justify-content: center;
-  display:flex;
-  flex-direction: row;
-  top:30px;
-  gap: 20px;
-}
+
 .project-text{
   text-align: center;
 }
-.project-dot{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:50%;
-  background: var(--color-pink);
-  box-shadow: 0 0 8px var(--color-hotpink);
-  cursor:pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
-}
-.project-dot:hover{
-  transform:scale(1.08);
-}
-.project-dot.active-dot{
-  background: var(--color-green);
- box-shadow: 0 0 8px var(--color-green-shadow);
-}
-/* project cta links */
-.projects-desc .project-tags{
-  justify-content:center;
-  margin-bottom:12px
-}
-.projects-desc .project-cta{
-  display:flex;
-  gap:12px;
-  margin-top:12px;
-}
-.projects-desc .cta-btn{
-  padding:8px 14px;
-  border-radius:999px;
-  font-weight:900;
-  text-decoration:none;
-  display:inline-block;
-}
-.projects-desc .cta-github{
-  background:var(--color-hotpink);
-  color:var(--color-baby-yellow);
-}
-.cta-github:hover{
-  scale: 1.03;
-  border: var(--color-hotpink) 3px solid;
-  background:var(--color-baby-yellow);
-  color: var(--color-hotpink);
 
-}
-.cta-demo:hover{
-  scale: 1.03;
-  border: var(--color-hotpink) 3px solid;
-  background:var(--color-baby-yellow);
-  color: var(--color-hotpink);
-}
-.projects-desc .cta-demo{
-  background:var(--color-hotpink);
-  color:var(--color-baby-yellow);
-}
 
 .skills-section {
   margin-top: 50px;
@@ -748,12 +679,7 @@ nav a:hover .nav-fill {
   animation-iteration-count: infinite;
 }
 
-/* Remove absolute positioning for floaties used as carousel dots */
-.project-circles .pink-floaty,
-.project-circles .green-floaty {
-  position: static;
-  margin: 0;
-}
+
 .skills-subtitle{
   font-size: 1.3rem;
   color: #322725;
@@ -764,50 +690,8 @@ nav a:hover .nav-fill {
   margin-bottom: -20px;
   position: absolute;
 }
-/* Skill Popup Modal Styles */
-.skill-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(238, 110, 147, 0.18); /* var(--color-pink) with opacity */
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.2s;
-}
 
-.skill-modal {
-  background: var(--color-baby-yellow);
-  border-radius: 40px;
-  border: 8px solid var(--color-light-pink-border);
-  box-shadow: 0 8px 32px rgba(238, 110, 147, 0.18);
-  padding: 2.5rem 2.5rem 2rem 2.5rem;
-  min-width: 320px;
-  max-width: 420px;
-  text-align: center;
-  position: relative;
-  z-index: 1001;
-  font-family: var(--font-family);
-}
 
-.skill-modal-close {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  background: var(--color-hotpink);
-  color: var(--color-baby-yellow);
-  border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  transition: background 0.2s;
-}
 .skill-modal-close:hover {
   background: var(--color-deep-yellow);
   color: var(--color-hotpink);
@@ -833,37 +717,6 @@ nav a:hover .nav-fill {
   font-weight:700;
 }
 
-.skill-modal-cert {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1.2rem;
-  background: var(--color-hotpink);
-  color: var(--color-baby-yellow);
-  border-radius: 20px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-.skill-modal-cert:hover {
-  background: var(--color-deep-yellow);
-  color: var(--color-hotpink);
-}
-.skill-modal-links {
-  margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
-}
-.skill-modal-link {
-  color: var(--color-deep-deep-yellow) !important;
-  text-decoration: underline;
-  font-weight: 700;
-}
-.skill-modal-link:hover {
-  color: var(--color-deep-yellow) !important;
-}
-.skill-modal-link:hover {
-  color: var(--color-hotpink) !important;
-  text-decoration: underline;
-}
 
 .skill-logo{
   object-fit: contain;
