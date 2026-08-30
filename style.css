@@ -702,38 +702,25 @@ nav a:hover .nav-fill {
 }
 
 .fun-gallery-section {
-  width: min(1280px, calc(100% - 48px));
-  margin: 80px auto 0;
+  width: min(100% - 28px, 1280px);
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: 30px;
 }
-
-.fun-gallery-intro {
-  max-width: 760px;
-  margin: 0;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #322725;
-  line-height: 1.8;
-}
-
 .fun-gallery-grid {
   width: 100%;
   column-count: 4;
-  column-gap: 18px;
 }
 
 .fun-gallery-item {
+  width: 100%;
   break-inside: avoid;
-  margin: 0 0 18px;
-  padding: 12px 12px 16px;
   border-radius: 28px;
-  background: rgba(255, 250, 170, 0.72);
-  border: 4px solid var(--color-hotpink);
-  box-shadow: 0 14px 0 rgba(248, 82, 129, 0.18);
+  border: 10px solid var(--color-light-pink-border);
+  box-shadow: 0 5px 0 rgba(248, 82, 129, 0.18);
   transform: rotate(var(--gallery-tilt, 0deg));
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
@@ -756,7 +743,7 @@ nav a:hover .nav-fill {
 
 .fun-gallery-item:hover {
   transform: translateY(-6px) rotate(0deg) scale(1.01);
-  box-shadow: 0 20px 0 rgba(248, 82, 129, 0.22);
+  box-shadow: 0 10px 0 rgba(248, 82, 129, 0.22);
 }
 
 .fun-gallery-item img {
@@ -784,10 +771,219 @@ nav a:hover .nav-fill {
   align-items: center;
   gap: 3rem;
 }
-.scribbles-img{
-  width: 100%;
-  max-width: 70vw;
+.ladybug-banner {
+  position: relative;
+  width: min(1600px, 100%);
+  height: clamp(160px, 20vw, 250px);
+  margin: 0 auto;
+  overflow: visible;
+  background: transparent;
+  margin-bottom: 30px;
 }
+
+.banner-line {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: min(1480px, 70vw);
+  transform: translate(-50%, -50%);
+  display: block;
+  opacity: 1;
+}
+
+.banner-bug,
+.banner-flower,
+.banner-leaf {
+  position: absolute;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.banner-leaf {
+  width: clamp(52px, 4.8vw, 110px);
+
+}
+
+.banner-leaf-left {
+  left: 25%;
+  top: 0%;
+  rotate: 0deg;
+}
+
+.banner-leaf-right {
+  right: 25%;
+  top: 40%;
+  rotate: 20deg;
+}
+
+.banner-leaf-right-lower {
+  right: 40%;
+  bottom: 0%;
+  rotate: 90deg;
+}
+
+.banner-flower {
+  width: clamp(72px, 5vw, 126px);
+  opacity: 1;
+
+}
+
+.flower-left-a {
+  left: 30%;
+  top: 35%;
+  width: clamp(60px, 4vw, 120px);
+
+  transform: rotate(-8deg);
+}
+
+.flower-center {
+  left: 37%;
+  top: 53%;
+  width: clamp(78px, 6vw, 142px);
+}
+
+.flower-right-a {
+  right: 27%;
+  top: 85%;
+  width: clamp(50px, 3vw, 100px);
+  transform: rotate(10deg);
+
+}
+
+
+.flower-right-b {
+  right: 18%;
+  top: 20%;
+  width: clamp(80px, 5.8vw, 146px);
+}
+
+
+.banner-bug {
+  --bug-rotation: 0deg;
+  --bug-wiggle: 0deg;
+
+  width: clamp(104px, 9.6vw, 180px);
+  rotate: calc(var(--bug-rotation) + var(--bug-wiggle));
+
+  animation: ladybug-wiggle 4.5s ease-in-out infinite;
+}
+
+.bug-left {
+  animation-delay: 0s;
+  left: 18%;
+  top: 41%;
+  --bug-rotation: 100deg;
+}
+
+.bug-center {
+  animation-delay: 2.7s;
+  left: 47%;
+  top: 0%;
+  width: clamp(112px, 10.6vw, 196px);
+  --bug-rotation: 180deg;
+}
+
+.bug-right {
+  animation-delay: 1.4s;
+  right: 10%;
+  top: 50%;
+  width: clamp(112px, 10.6vw, 196px);
+  --bug-rotation: 100deg;
+}
+
+@keyframes ladybug-wiggle {
+  0%,
+  100% {
+    --bug-wiggle: 0deg;
+  }
+
+  50% {
+    --bug-wiggle: 7deg;
+  }
+}
+@property --bug-wiggle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+} 
+
+@media (max-width: 768px) {
+  .ladybug-banner {
+    height: clamp(110px, 28vw, 170px);
+  }
+
+  .banner-line {
+    width: 90vw;
+    left: 50%;
+    top: 52%;
+  }
+
+  .banner-leaf {
+    width: clamp(28px, 7vw, 60px);
+  }
+
+  .banner-leaf-left {
+    left: 10%;
+    top: 8%;
+  }
+
+  .banner-leaf-right {
+    right: 25%;
+    top: 36%;
+  }
+
+  .banner-leaf-right-lower {
+    right: 50%;
+    bottom: 20%;
+  }
+
+  .banner-flower {
+    width: clamp(42px, 10vw, 74px);
+  }
+
+  .flower-left-a {
+    left: 25%;
+    top: 38%;
+    width: clamp(40px, 3vw, 60px);
+  }
+
+  .flower-center {
+    left: 33%;
+    top: 43%;
+  }
+
+  .flower-right-a {
+    right: 23%;
+    top: 80%;
+    width: clamp(30px, 2vw, 50px);
+  }
+
+  .flower-right-b {
+    right: 12%;
+    top: 22%;
+  }
+
+  .banner-bug {
+    width: clamp(72px, 17vw, 110px);
+  }
+
+  .bug-left {
+    left: 10%;
+    top: 30%;
+  }
+
+  .bug-center {
+    left: 46%;
+    top: 7%;
+  }
+
+  .bug-right {
+    right: 8%;
+    top: 65%;
+  }
+}
+
 .articles{
   display: flex;
   flex-direction: column;
@@ -1088,6 +1284,15 @@ header nav a{
 
 }
 
+  .bug-left {
+    left: 6%;
+    top: 35%;
+  }
+  .bug-right {
+    right: 0%;
+    top: 65%;
+  }
+
 .fun-gallery-grid {
   column-count: 1;
 }
@@ -1145,6 +1350,18 @@ header nav a{
   width: 15px;
   height: 15px;
 }
+
+  .flower-center{
+    top: 60%;
+  }
+  .flower-left-a{
+    width: 30px;
+    right: 35%;
+  }
+  .bug-center{  
+    left: 48%;
+    top: 5%;
+  }
   
 }
 
