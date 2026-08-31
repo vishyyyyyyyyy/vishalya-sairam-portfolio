@@ -1,40 +1,69 @@
-// Music button 
 const musicBtn = document.getElementById('music-button');
 const musicIcon = musicBtn.querySelector('img');
 const audio = document.getElementById('audio-player');
+const themeBtn = document.getElementById('theme-button');
+const themeIcon = document.getElementById('theme-icon');
+const themeStorageKey = 'portfolio-dark-mode';
+const musicStorageKey = 'portfolio-music-state';
+
 audio.loop = true;
-let isPlaying = true;    
-musicIcon.src = 'static/music on.svg'; 
-// Play audio on page load
-window.addEventListener('DOMContentLoaded', function() {
+
+function setMusicIcon(isPlaying) {
+  musicIcon.src = isPlaying ? 'static/music on.svg' : 'static/music off.svg';
+}
+
+function saveMusicState() {
+  sessionStorage.setItem(musicStorageKey, JSON.stringify({
+    currentTime: audio.currentTime,
+    isPlaying: !audio.paused
+  }));
+}
+
+const savedMusicState = JSON.parse(sessionStorage.getItem(musicStorageKey) || 'null');
+const shouldPlayMusic = savedMusicState ? savedMusicState.isPlaying : true;
+setMusicIcon(shouldPlayMusic);
+
+if (savedMusicState && Number.isFinite(savedMusicState.currentTime)) {
+  audio.addEventListener('loadedmetadata', () => {
+    audio.currentTime = savedMusicState.currentTime;
+  }, { once: true });
+}
+
+if (shouldPlayMusic) {
   audio.play().catch(() => {
-    // Autoplay blocked, show music off icon
-    musicIcon.src = 'static/music off.svg';
-    isPlaying = false;
+    setMusicIcon(false);
+    saveMusicState();
   });
-});
+}
 
 musicBtn.addEventListener('click', () => {
-  if (isPlaying) {
-    audio.pause();
-    musicIcon.src = 'static/music off.svg';
-    isPlaying = false;
+  if (audio.paused) {
+    audio.play().then(() => {
+      setMusicIcon(true);
+      saveMusicState();
+    }).catch(() => setMusicIcon(false));
   } else {
-    audio.play();
-    musicIcon.src = 'static/music on.svg';
-    isPlaying = true;
+    audio.pause();
+    setMusicIcon(false);
+    saveMusicState();
   }
 });
 
-// Theme button
-const themeBtn = document.getElementById('theme-button');
-const themeIcon = document.getElementById('theme-icon');
-let darkMode = false;
+audio.addEventListener('timeupdate', saveMusicState);
+window.addEventListener('pagehide', saveMusicState);
+
+function setTheme(isDark) {
+  document.body.classList.toggle('dark-mode', isDark);
+  themeIcon.src = isDark ? 'static/dark mode.svg' : 'static/light mode.svg';
+}
+
+const isDarkMode = localStorage.getItem(themeStorageKey) === 'true';
+setTheme(isDarkMode);
 
 themeBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  themeIcon.src = darkMode ? 'static/light mode.svg' : 'static/dark mode.svg';
-  darkMode = !darkMode;
+  const nextIsDark = !document.body.classList.contains('dark-mode');
+  setTheme(nextIsDark);
+  localStorage.setItem(themeStorageKey, String(nextIsDark));
 });
 
 
