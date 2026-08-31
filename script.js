@@ -53,6 +53,7 @@ audio.addEventListener('timeupdate', saveMusicState);
 window.addEventListener('pagehide', saveMusicState);
 
 function setTheme(isDark) {
+  document.documentElement.classList.toggle('dark-mode', isDark);
   document.body.classList.toggle('dark-mode', isDark);
   themeIcon.src = isDark ? 'static/dark mode.svg' : 'static/light mode.svg';
 }
@@ -61,7 +62,7 @@ const isDarkMode = localStorage.getItem(themeStorageKey) === 'true';
 setTheme(isDarkMode);
 
 themeBtn.addEventListener('click', () => {
-  const nextIsDark = !document.body.classList.contains('dark-mode');
+  const nextIsDark = !document.documentElement.classList.contains('dark-mode');
   setTheme(nextIsDark);
   localStorage.setItem(themeStorageKey, String(nextIsDark));
 });
