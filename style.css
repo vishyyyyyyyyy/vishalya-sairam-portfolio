@@ -585,18 +585,18 @@ nav a:hover .nav-fill {
 }
 
 .projects-container {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
   align-items: flex-start;
+  padding: 0 20px;
 }
-
-.project-card{
-  width: 550px;
-  flex-wrap: wrap;
-  
+.project-card {
+  width: min(550px, 100%);
 }
 
 .dark-mode .project-card:hover {
@@ -607,39 +607,21 @@ nav a:hover .nav-fill {
   box-shadow: 0px 3px 10px var(--color-hotpink);
 }
 
-
-
 .projects-view {
-  position: relative; 
+  width: 100%;
+  height: auto;
+  aspect-ratio: 550 / 400;
+
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: var(--bg-size);
+
   border-radius: 50px;
   border: 13px solid var(--color-light-pink-border);
-  width: 550px;
-  height: 400px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding: 0 2rem;
+
   transition: background-size 0.3s ease;
-  
-}
-
-
-@keyframes mini-flower {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(360deg); }
-}
-
-.mini-flower{
-  position: absolute;
-  z-index: 2;
-  scale:0.8;
-  pointer-events: none;
-  animation: mini-flower 5s ease-in-out infinite;
 }
 
 .project-title {
