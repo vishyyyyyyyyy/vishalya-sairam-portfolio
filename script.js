@@ -38,6 +38,59 @@ themeBtn.addEventListener('click', () => {
 });
 
 
+const funGalleryBackdrop = document.createElement('div');
+funGalleryBackdrop.className = 'fun-gallery-backdrop';
+document.body.appendChild(funGalleryBackdrop);
+
+const funGalleryItems = [...document.querySelectorAll('.fun-gallery-item')];
+
+function closeFunGallerySelection() {
+  funGalleryItems.forEach(item => {
+    item.classList.remove('is-selected', 'is-dimmed');
+  });
+  funGalleryBackdrop.classList.remove('is-visible');
+}
+
+funGalleryItems.forEach(item => {
+  const closeButton = document.createElement('button');
+  closeButton.type = 'button';
+  closeButton.className = 'gallery-close';
+  closeButton.setAttribute('aria-label', 'Close image');
+  closeButton.textContent = '×';
+  closeButton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    closeFunGallerySelection();
+  });
+  item.appendChild(closeButton);
+
+  item.addEventListener('click', () => {
+    const isSelected = item.classList.contains('is-selected');
+
+    funGalleryItems.forEach(card => {
+      card.classList.remove('is-selected', 'is-dimmed');
+    });
+
+    if (!isSelected) {
+      item.classList.add('is-selected');
+      funGalleryItems.forEach(card => {
+        if (card !== item) {
+          card.classList.add('is-dimmed');
+        }
+      });
+      funGalleryBackdrop.classList.add('is-visible');
+    } else {
+      funGalleryBackdrop.classList.remove('is-visible');
+    }
+  });
+});
+
+funGalleryBackdrop.addEventListener('click', closeFunGallerySelection);
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeFunGallerySelection();
+  }
+});
+
 const projects = [
   {
     title: "Cozy Cat Planner",
