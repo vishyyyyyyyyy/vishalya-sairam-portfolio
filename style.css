@@ -1092,7 +1092,7 @@ nav a:hover .nav-fill {
   flex-direction: column;
 }
 .articlebox:hover{
-  box-shadow: 0 0 30px var(--color-hotpink);
+  box-shadow: 0 10px 0 rgba(248, 82, 129, 0.22);
 }
 
 .articlebox a {
