@@ -595,8 +595,11 @@ nav a:hover .nav-fill {
   align-items: flex-start;
   padding: 0 20px;
 }
+
 .project-card {
   width: min(550px, 100%);
+  text-decoration: none;
+  color: var(--color-pink);
 }
 
 .dark-mode .project-card:hover {
