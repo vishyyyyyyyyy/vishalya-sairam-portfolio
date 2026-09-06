@@ -50,20 +50,83 @@
             <!-- Theme Button -->
             <button id="theme-button" class = "header-button" type="button">
                 <div class="yellow-floaty" style="width: 60px; height: 60px;">
-                    <img src="light mode.svg" id="theme-icon" alt="Theme Icon" style="width: 50%; height: 50%;">
+                    <img src="static/light mode.svg" id="theme-icon" alt="Theme Icon" style="width: 50%; height: 50%;">
                 </div>
 
             </button>
         </div>
 
-    <section class="fun-gallery-section" id="fun-gallery">
-        <div class="section-title">
-            <h1 class="shadow-text">BEFORE I FADE</h1>
-            <h1 class="yellow-shadow">BEFORE I FADE</h1>
-            <h1 class="gradient-text">BEFORE I FADE </h1>
-        </div>
+    <main class="project-page">
+        <section class="project-hero" aria-labelledby="project-title">
+            <div class="section-title project-heading">
+                <h1 class="shadow-text">BEFORE I FADE</h1>
+                <h1 class="yellow-shadow">BEFORE I FADE</h1>
+                <h1 class="gradient-text" id="project-title">BEFORE I FADE</h1>
+            </div>
+            <div class="project-hero-grid">
+                <div class="project-cover" role="img" aria-label="Before I Fade game cover">
+                    <div class="project-cover-copy">
+                        <span>BEFORE I</span>
+                        <span>FADE</span>
+                    </div>
+                    <div class="project-cover-ghost"></div>
+                </div>
+                <div class="project-summary">
+                    <div class="project-tags">
+                        <span>#game dev</span>
+                        <span>#visual development</span>
+                    </div>
+                    <p>Before I Fade is a 2D murder mystery visual novel where you play as a ghost, waking up exactly one month after your death.</p>
+                    <dl class="project-facts">
+                        <div><dt>Role</dt><dd>Designer<br>Developer</dd></div>
+                        <div><dt>Duration</dt><dd>3 months</dd></div>
+                        <div><dt>Tools</dt><dd>Godot<br>Illustrator</dd></div>
+                    </dl>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-pill">Live Demo</a>
+                <a href="#" class="project-pill">View Trailer</a>
+                <a href="#" class="project-pill">Repository</a>
+            </div>
+        </section>
 
-       
+        <section class="process-section" aria-labelledby="process-title">
+            <div class="section-title process-heading">
+                <h2 class="shadow-text">PROCESS BREAKDOWN</h2>
+                <h2 class="yellow-shadow">PROCESS BREAKDOWN</h2>
+                <h2 class="gradient-text" id="process-title">PROCESS BREAKDOWN</h2>
+            </div>
+            <div class="process-layout">
+                <nav class="process-nav" aria-label="Project process">
+                    <a href="#idea" class="is-active"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>IDEA</span></a>
+                    <a href="#visual-style"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>VISUAL STYLE</span></a>
+                    <a href="#development"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DEVELOPMENT</span></a>
+                    <a href="#challenges"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>CHALLENGES</span></a>
+                    <a href="#iterations"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>ITERATIONS</span></a>
+                </nav>
+                <div class="process-copy">
+                    <article id="idea" class="process-panel">
+                        <h3>Idea</h3>
+                        <p>A quiet mystery about the stories people leave behind, told through the eyes of someone who cannot move on.</p>
+                    </article>
+                    <article id="visual-style" class="process-panel"><h3>Visual style</h3><p>Pixel-inspired environments and soft, expressive characters keep the world intimate and a little uncanny.</p></article>
+                    <article id="development" class="process-panel"><h3>Development</h3><p>I built the core interaction loop around exploring rooms, collecting clues, and choosing which memories to trust.</p></article>
+                    <article id="challenges" class="process-panel"><h3>Challenges</h3><p>The biggest challenge was balancing a readable interface with a world that should feel hazy and emotionally unresolved.</p></article>
+                    <article id="iterations" class="process-panel"><h3>Iterations</h3><p>Each pass tightened the pacing, clarified the clue system, and gave the visual language more room to breathe.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-conclusion" aria-labelledby="conclusion-title">
+            <div class="section-title conclusion-heading">
+                <h2 class="shadow-text">CONCLUSION</h2>
+                <h2 class="yellow-shadow">CONCLUSION</h2>
+                <h2 class="gradient-text" id="conclusion-title">CONCLUSION</h2>
+            </div>
+            <div class="conclusion-box"><p>Before I Fade is a small story about memory, guilt, and the strange comfort of being remembered.</p></div>
+        </section>
+    </main>
 
 
      <!-- contact me section -->
@@ -101,8 +164,8 @@
 
     </div>
 </div>
-        <audio id="audio-player" src="Daydreaming.mp3"></audio>
+        <audio id="audio-player" src="../Daydreaming.mp3"></audio>
 
 </body>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </html>

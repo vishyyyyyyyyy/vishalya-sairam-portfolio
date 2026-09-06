@@ -49,6 +49,58 @@ musicBtn.addEventListener('click', () => {
   }
 });
 
+const processSection = document.querySelector('.process-section');
+const processTabs = [...document.querySelectorAll('.process-nav a')];
+const processPanels = [...document.querySelectorAll('.process-panel')];
+
+if (processSection && processTabs.length && processPanels.length) {
+  let activeProcessIndex = 0;
+
+  function setActiveProcess(index, shouldFocus = false) {
+    activeProcessIndex = (index + processTabs.length) % processTabs.length;
+    processTabs.forEach((tab, tabIndex) => {
+      const isActive = tabIndex === activeProcessIndex;
+      tab.classList.toggle('is-active', isActive);
+      tab.setAttribute('aria-current', isActive ? 'step' : 'false');
+    });
+    processPanels.forEach((panel, panelIndex) => {
+      panel.classList.toggle('is-active', panelIndex === activeProcessIndex);
+    });
+    if (shouldFocus) processTabs[activeProcessIndex].focus({ preventScroll: true });
+  }
+
+  processTabs.forEach((tab, tabIndex) => {
+    tab.addEventListener('click', (event) => {
+      event.preventDefault();
+      setActiveProcess(tabIndex);
+      processPanels[tabIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    tab.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        setActiveProcess(tabIndex + 1, true);
+      }
+      if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
+        event.preventDefault();
+        setActiveProcess(tabIndex - 1, true);
+      }
+    });
+  });
+
+  const processObserver = new IntersectionObserver((entries) => {
+    const visiblePanels = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((first, second) => second.intersectionRatio - first.intersectionRatio);
+    if (!visiblePanels.length) return;
+    const visibleIndex = processPanels.indexOf(visiblePanels[0].target);
+    if (visibleIndex !== -1) setActiveProcess(visibleIndex);
+  }, { rootMargin: '-35% 0px -50% 0px', threshold: [0, .25, .5, .75, 1] });
+
+  processPanels.forEach((panel) => processObserver.observe(panel));
+
+  setActiveProcess(0);
+}
+
 audio.addEventListener('timeupdate', saveMusicState);
 window.addEventListener('pagehide', saveMusicState);
 
@@ -180,142 +232,6 @@ const projects = [
   },
  
 ];
-
-let currentProject = 0;
-let filteredProjects = projects.slice();
-
-// Helper: extract github/demo/primary links from project (supports string or array)
-function getLinksFromProject(p) {
-  let githubURL = null;
-  let demoURL = null;
-  // parse anchors from desc first
-  const tmp = document.createElement('div');
-  tmp.innerHTML = p.desc || '';
-  Array.from(tmp.querySelectorAll('a')).forEach(a => {
-    const href = a.getAttribute('href');
-    if (!href) return;
-    if (href.includes('github.com')) githubURL = githubURL || href;
-    else demoURL = demoURL || href;
-  });
-  // then check p.link (supports string or array)
-  if (p.link) {
-    if (Array.isArray(p.link)) {
-      p.link.forEach(h => {
-        if (!h) return;
-        if (typeof h === 'string') {
-          if (h.includes('github.com')) githubURL = githubURL || h;
-          else demoURL = demoURL || h;
-        }
-      });
-    } else if (typeof p.link === 'string') {
-      if (p.link.includes('github.com')) githubURL = githubURL || p.link;
-      else demoURL = demoURL || p.link;
-    }
-  }
-  const primary = demoURL || githubURL || (Array.isArray(p.link) ? p.link[0] : (typeof p.link === 'string' ? p.link : null));
-  return { githubURL, demoURL, primary };
-}
-
-function showProject(index) {
-  const p = filteredProjects[index];
-  const view = document.querySelector('.projects-view');
-  const titleEl = document.querySelector('.project-title');
-  const textEl = document.querySelector('.project-text');
-  const tagsContainer = document.querySelector('.project-tags');
-  if (!p) {
-    view.style.backgroundImage = 'none';
-    titleEl.innerHTML = 'No projects';
-    textEl.innerHTML = '<p style="text-align:center; width:100%">No projects match the selected filters.</p>';
-    if (tagsContainer) tagsContainer.innerHTML = '';
-    return;
-  }
-
-  view.style.backgroundImage = p.image ? "url('" + p.image + "')" : 'none';
-  textEl.innerHTML = p.desc || '';
-
-  // Title: link to primary (demo preferred) when available
-  const links = getLinksFromProject(p);
-  if (links.primary) {
-    titleEl.innerHTML = `<a href="${links.primary}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">${p.title}</a>`;
-  } else {
-    titleEl.textContent = p.title;
-  }
-
-  // Render tags and make them interactive
-  if (tagsContainer) {
-    const tags = p.tags || [];
-    tagsContainer.innerHTML = tags.map(t => `<span class="project-tag" data-tag="${t}" tabindex="0" role="button">#${t}</span>`).join('');
-    tagsContainer.querySelectorAll('.project-tag').forEach(el => {
-      const tag = el.dataset.tag;
-      const chip = document.querySelector(`.filter-chip[data-tag="${tag}"]`);
-      const handle = () => {
-        if (chip) {
-          toggleFilter(tag, chip);
-        } else {
-          if (selectedFilters.has(tag)) selectedFilters.delete(tag);
-          else selectedFilters.add(tag);
-          updateFilteredProjectsAndUI();
-        }
-      };
-      el.style.cursor = 'pointer';
-      el.addEventListener('click', handle);
-      el.addEventListener('keydown', (ev) => {
-        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); handle(); }
-      });
-    });
-  }
-
-  // Render CTAs (GitHub / Live Demo)
-  const descContainer = document.querySelector('.projects-desc');
-  if (descContainer) {
-    let ctaDiv = descContainer.querySelector('.project-cta');
-    if (!ctaDiv) {
-      ctaDiv = document.createElement('div');
-      ctaDiv.className = 'project-cta';
-      const mini = descContainer.querySelector('.mini-flower');
-      if (mini) descContainer.insertBefore(ctaDiv, mini);
-      else descContainer.appendChild(ctaDiv);
-    }
-    const links2 = getLinksFromProject(p);
-    const externalIcon = `<svg class="cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>`;
-    const parts = [];
-    if (links2.githubURL) parts.push(`<a class="cta-btn cta-github" href="${links2.githubURL}" target="_blank" rel="noopener noreferrer">GitHub ${externalIcon}</a>`);
-    if (links2.demoURL) parts.push(`<a class="cta-btn cta-demo" href="${links2.demoURL}" target="_blank" rel="noopener noreferrer">Live Demo ${externalIcon}</a>`);
-    ctaDiv.innerHTML = parts.join('');
-    ctaDiv.style.display = parts.length ? 'flex' : 'none';
-  }
-
-  // Update dots
-  const circles = document.querySelectorAll('.project-circles .project-dot');
-  circles.forEach((circle, i) => circle.classList.toggle('active-dot', i === index));
-}
-
-// Arrow event listeners
-document.querySelector('.right-arrow-container').addEventListener('click', () => {
-  if (filteredProjects.length === 0) return;
-  currentProject = (currentProject + 1) % filteredProjects.length;
-  showProject(currentProject);
-});
-document.querySelector('.left-arrow-container').addEventListener('click', () => {
-  if (filteredProjects.length === 0) return;
-  currentProject = (currentProject - 1 + filteredProjects.length) % filteredProjects.length;
-  showProject(currentProject);
-});
-
-// Initialize
-
-showProject(currentProject);
-document.querySelector('.projects-view').onclick = function(e) {
-  // Prevent navigation if clicking on arrows
-  if (e.target.closest('.left-arrow-container') || e.target.closest('.right-arrow-container')) return;
-  const p = filteredProjects[currentProject];
-  if (p) {
-    const href = getLinksFromProject(p).primary;
-    if (href) window.open(href, '_blank');
-  }
-};
-
-
 
 
 // --- Attach click handlers to floaties ---
