@@ -677,11 +677,15 @@ nav a:hover .nav-fill {
   line-height: 1.8;
 }
 
-.project-tags,
-.project-links {
+.project-tags{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
+}
+.project-links {
+  display: flex;
+  width: 100%;
+  gap: clamp(14px, 3vw, 42px);
 }
 
 .project-tags span {
@@ -700,15 +704,30 @@ nav a:hover .nav-fill {
 
 .project-pill {
   display: inline-flex;
+  flex: 1 1 0;
   align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-width: 0;
+  height: 70px;
   min-height: 30px;
-  padding: 0 14px;
-  border-radius: 20px;
-  background: var(--color-pink);
-  color: #fff;
-  font-size: .78rem;
-  font-weight: 900;
+  border-radius: 30px;
+  background: var(--color-hotpink);
+  color: var(--color-baby-yellow);
+    box-shadow:
+    0 5px 8px rgba(0, 0, 0, 0.3),      /* black drop shadow */
+    inset 0 0 0 7px var(--color-hotpink); /* pink inset border */
+  font-size: 1.4rem;
+  font-weight: 700;
   text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.project-pill-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .project-summary > p { margin: 24px 0; }
@@ -729,7 +748,22 @@ nav a:hover .nav-fill {
 .project-facts dd { margin: 8px 0 0; color: var(--color-deep-deep-yellow); font-size: .78rem; line-height: 1.4; }
 
 .project-links { margin-top: 42px; }
-.project-pill:hover { background: var(--color-hotpink); transform: translateY(-2px); }
+.project-pill:hover {
+  background: var(--color-baby-yellow);
+  color: var(--color-hotpink);
+  transform: translateY(-2px);
+  box-shadow:
+    0 5px 8px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 7px var(--color-hotpink);
+}
+
+.video-pill:hover .project-pill-icon {
+  content: url('projects/static/pink video icon.png');
+}
+
+.github-pill:hover .project-pill-icon {
+  content: url('projects/static/github pink.svg');
+}
 
 .process-section { margin-top: 120px; }
 .process-heading,
@@ -773,13 +807,15 @@ nav a:hover .nav-fill {
   max-width: 100%;
   min-height: 38px;
   color: var(--color-pink);
-  font-size: .78rem;
+  font-size: 1rem;
   font-weight: 900;
   text-decoration: none;
 }
 
 .process-nav a.is-active,
-.process-nav a:hover { color: var(--color-deep-deep-yellow); }
+.process-nav a:hover { 
+  color: var(--color-baby-yellow); 
+}
 
 .process-nav a span {
   position: relative;
@@ -795,13 +831,13 @@ nav a:hover .nav-fill {
   height: 0;
   object-fit: contain;
   opacity: 0;
-  transform: translateY(-50%) scale(.7);
+  transform: translateY(-50%) scale(1);
   transform-origin: center;
   transition: width 220ms ease, height 220ms ease, opacity 220ms ease, transform 220ms ease;
 }
 
 .process-nav a.is-active img {
-  width: calc(100% + 34px);
+  width: calc(100% + 60px);
   height: auto;
   aspect-ratio: 234 / 173;
   left: -17px;
@@ -839,7 +875,18 @@ nav a:hover .nav-fill {
   margin: 24px 0 34px;
 }
 
+.single-image-grid .process-image-card {
+  grid-column: 1 / -1;
+}
+
+.single-image-grid .process-image {
+  max-height: 620px;
+}
+
 .process-image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 0;
   margin: 0;
   overflow: hidden;
@@ -850,7 +897,7 @@ nav a:hover .nav-fill {
 
 .process-image {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -865,6 +912,7 @@ nav a:hover .nav-fill {
   color: var(--color-pink);
   font-size: 1rem;
   line-height: 1.7;
+  text-align: left;
 }
 
 @media (max-width: 700px) {
@@ -872,6 +920,8 @@ nav a:hover .nav-fill {
   .project-heading { margin-bottom: 30px; }
   .project-hero-grid { grid-template-columns: 1fr; gap: 34px; }
   .project-links { margin-top: 28px; }
+  .project-pill { height: 58px; padding: 0 12px; border-radius: 20px; font-size: .8rem; gap: 7px; }
+  .project-pill-icon { width: 18px; height: 18px; }
   .process-section { margin-top: 84px; }
   .process-layout { grid-template-columns: 1fr; gap: 22px; }
   .process-nav { position: static; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -1378,6 +1428,7 @@ nav a:hover .nav-fill {
    background: var(--color-hotpink);
   color: var(--color-baby-yellow);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .email-btn, .linkedin-btn, .github-btn {
