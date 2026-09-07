@@ -880,7 +880,8 @@ nav a:hover .nav-fill {
 }
 
 .process-panel.is-active {
-  box-shadow: 0 8px 0 var(--color-deep-yellow);
+  /* box-shadow: 0 8px 0 var(--color-deep-yellow); */
+  box-shadow: 0px 3px 10px var(--color-deep-deep-yellow);
 }
 
 .process-panel h3 { margin: 0 0 8px; color: var(--color-deep-deep-yellow); font-size: 1.25rem; text-transform: uppercase; }
