@@ -125,6 +125,7 @@ funGalleryBackdrop.className = 'fun-gallery-backdrop';
 document.body.appendChild(funGalleryBackdrop);
 
 const funGalleryItems = [...document.querySelectorAll('.fun-gallery-item')];
+const processImageCards = [...document.querySelectorAll('.process-image-card')];
 
 function closeFunGallerySelection() {
   funGalleryItems.forEach(item => {
@@ -167,9 +168,43 @@ funGalleryItems.forEach(item => {
 });
 
 funGalleryBackdrop.addEventListener('click', closeFunGallerySelection);
+
+function closeProcessImageSelection() {
+  processImageCards.forEach(card => card.classList.remove('is-selected'));
+  if (!funGalleryItems.some(item => item.classList.contains('is-selected'))) {
+    funGalleryBackdrop.classList.remove('is-visible');
+  }
+}
+
+processImageCards.forEach(card => {
+  const closeButton = document.createElement('button');
+  closeButton.type = 'button';
+  closeButton.className = 'gallery-close';
+  closeButton.setAttribute('aria-label', 'Close image');
+  closeButton.textContent = '×';
+  closeButton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    closeProcessImageSelection();
+  });
+  card.appendChild(closeButton);
+
+  card.addEventListener('click', () => {
+    const isSelected = card.classList.contains('is-selected');
+    processImageCards.forEach(item => item.classList.remove('is-selected'));
+    if (!isSelected) {
+      card.classList.add('is-selected');
+      funGalleryBackdrop.classList.add('is-visible');
+    } else {
+      closeProcessImageSelection();
+    }
+  });
+});
+
+funGalleryBackdrop.addEventListener('click', closeProcessImageSelection);
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
     closeFunGallerySelection();
+    closeProcessImageSelection();
   }
 });
 

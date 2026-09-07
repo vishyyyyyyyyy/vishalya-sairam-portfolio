@@ -765,7 +765,9 @@ nav a:hover .nav-fill {
   content: url('projects/static/github pink.svg');
 }
 
-.process-section { margin-top: 120px; }
+.process-section { 
+  margin-top: 120px; 
+}
 .process-heading,
 .conclusion-heading {
   width: max-content;
@@ -893,6 +895,56 @@ nav a:hover .nav-fill {
   border: 5px solid var(--color-light-pink-border);
   border-radius: 18px;
   background: transparent;
+}
+
+.process-image-card.is-selected {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  max-width: calc(100vw - 64px);
+  max-height: calc(100vh - 64px);
+  margin: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1200;
+  border-width: 12px;
+  background: var(--color-baby-yellow);
+  box-shadow: 0 3px 10px var(--color-hotpink);
+}
+
+.process-image-card.is-selected .process-image {
+  width: auto;
+  max-width: calc(100vw - 88px);
+  max-height: calc(100vh - 88px);
+  object-fit: contain;
+}
+
+.process-image-card .gallery-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(17, 17, 17, 0.7);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  z-index: 10;
+}
+
+.process-image-card.is-selected .gallery-close {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .process-image {
