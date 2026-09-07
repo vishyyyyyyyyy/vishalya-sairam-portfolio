@@ -640,7 +640,6 @@ nav a:hover .nav-fill {
 .project-page {
   width: min(100% - 48px, 1120px);
   margin: 0 auto;
-  padding: 72px 0 0;
 }
 
 .project-hero,
@@ -700,6 +699,24 @@ nav a:hover .nav-fill {
   font-size: .78rem;
   font-weight: 900;
   text-decoration: none;
+}
+
+.project-award {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  color: var(--color-deep-deep-yellow);
+  font-size: .9rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.project-award img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .project-pill {
@@ -968,7 +985,7 @@ nav a:hover .nav-fill {
 }
 
 @media (max-width: 700px) {
-  .project-page { width: min(100% - 28px, 560px); padding-top: 44px; }
+  .project-page { width: min(100% - 28px, 560px);}
   .project-heading { margin-bottom: 30px; }
   .project-hero-grid { grid-template-columns: 1fr; gap: 34px; }
   .project-links { margin-top: 28px; }
