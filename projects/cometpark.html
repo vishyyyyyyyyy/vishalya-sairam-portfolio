@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishalya Sairam's Portfolio</title>
+    <script>if (localStorage.getItem('portfolio-dark-mode') === 'true') document.documentElement.classList.add('dark-mode');</script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="static/inner flower.svg">
+</head>
+<body>
+     <!-- header section -->
+    <header>
+        <nav>
+            <a href="../index.html">
+                <span class="nav-outline">VISHALYA SAIRAM  ഒ·˚⊹ ᰔ</span>
+                <span class="nav-fill">VISHALYA SAIRAM  ഒ·˚⊹ ᰔ</span>
+            </a>
+            <div class="nav-spacer">
+            <a href="../projects.html">
+                <span class="nav-outline">Projects</span>
+                <span class="nav-fill">Projects</span>
+            </a>
+            <a href="../fun.html">
+                <span class="nav-outline">Fun</span>
+                <span class="nav-fill">Fun</span>
+            </a>
+            <a href="../scribbles.html">
+                <span class="nav-outline">Scribbles</span>
+                <span class="nav-fill">Scribbles</span>
+            </a>
+            <a href="../about.html">
+                <span class="nav-outline">About</span>
+                <span class="nav-fill">About</span>
+            </a>
+            </div>
+        </nav>
+    </header>
+    <div class="header-button-container">
+            <!-- Music Button -->
+            <button id="music-button" class = "header-button" type="button">
+                <div class="pink-floaty" style="width: 60px; height: 60px;">
+                    <img src="" id="music-icon" alt="Music Icon" style="width: 50%; height: 50%;">
+                </div>
+
+            </button>
+
+            <!-- Theme Button -->
+            <button id="theme-button" class = "header-button" type="button">
+                <div class="yellow-floaty" style="width: 60px; height: 60px;">
+                    <img src="static/light mode.svg" id="theme-icon" alt="Theme Icon" style="width: 50%; height: 50%;">
+                </div>
+
+            </button>
+        </div>
+
+    <main class="project-page">
+        <section class="project-hero" aria-labelledby="project-title">
+            <div class="section-title project-heading">
+                <h1 class="shadow-text">COMET PARK</h1>
+                <h1 class="yellow-shadow">COMET PARK</h1>
+                <h1 class="gradient-text" id="project-title">COMET PARK</h1>
+            </div>
+            <div class="project-hero-grid">
+                <div class="left-card">
+                    <div class="projects-view" style="background-image: url('static/cometpark/cometpark mockup.png'); --bg-size: 110%;"></div>
+                </div>
+                <div class="project-summary">
+                    <div class="project-tags">
+                        <span>#case study</span>
+                        <span>#visual design</span>
+                    </div>
+                    <div class="project-award">
+                        <img src="static/trophy.svg" alt="Trophy">
+                        <span>The best overall Build that's got legs - Codédex Back 2 School Challenge</span>
+                    </div>
+                    <p>
+                    Comet Park is a mobile app designed to help UTD commuters find the best available parking spots on campus. 
+                    </p>
+                    <dl class="project-facts">
+                        <div><dt>Role</dt><dd>Designer<br>Developer</dd></div>
+                        <div><dt>Duration</dt><dd>OCT 2026 - NOV 2026</dd></div>
+                        <div><dt>Tools</dt><dd>Figma<br>VS Code<br>GitHub Copilot</dd></div>
+                    </dl>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://vishyyyyyyyyy.github.io/CometPark/" target="_blank" rel="noopener noreferrer" class="project-pill">Live Demo ⤿</a>
+                <a href="https://github.com/vishyyyyyyyyy/CometPark" target="_blank" rel="noopener noreferrer" class="project-pill github-pill">
+                    <img src="static/github yellow.svg" alt="" class="project-pill-icon">
+                    <span>Repository</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="process-section" aria-labelledby="process-title">
+            <div class="section-title process-heading">
+                <h2 class="shadow-text">PROCESS BREAKDOWN</h2>
+                <h2 class="yellow-shadow">PROCESS BREAKDOWN</h2>
+                <h2 class="gradient-text" id="process-title">PROCESS BREAKDOWN</h2>
+            </div>
+            <div class="process-layout">
+                <nav class="process-nav" aria-label="Project process">
+                    <a href="#background" class="is-active"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>BACKGROUND</span></a>
+                    <a href="#idea"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>IDEA</span></a>
+                    <a href="#data"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DATA COLLECTION</span></a>
+                    <a href="#observations"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>KEY OBSERVATIONS</span></a>
+                    <a href="#analysis"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>ANALYSIS</span></a>
+                    <a href="#design"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DESIGN</span></a>
+                    <a href="#development"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DEVELOPMENT</span></a>
+                    <a href="#improvements"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>FUTURE IMPROVEMENTS</span></a>
+                    <a href="#thoughts"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>FINAL THOUGHTS</span></a>
+                </nav>
+                <div class="process-copy">
+                    <article id="background" class="process-panel">
+                        <h2>BACKGROUND</h2>
+                        <p>
+                            Before I get into the project, here’s a short intro about me + my school: <br><br>
+                            I’m a sophomore at the University of Texas at Dallas and study Computer Engineering! UTD is really nice and small, making it easy to walk to classes in under 5 mins max. There’s a bunch of clubs and super cool activities, but there is one huge problem: parking.
+                            <br><br>
+                            UTD is widely considered a commuter-heavy school, as many students don’t live on campus and drive or use the dart bus to get to classes on time. But what if I told you parking sucks at UTD? 
+                            I’m a relatively new driver and was excited I could now drive myself to college without having to ask my parents to drop me off. When I tried to purchase a parking permit, I was a little shocked by how expensive parking permits were.
+                            <br><br>
+                            Green: $198 <br>
+                            Gold: $355<br>
+                            Orange: $547<br>
+                            Purple: $676<br>
+                            <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/permit cost.png" alt="permit costs" class="process-image">
+                                </figure>
+                            </div>
+
+                            Students are already paying high tuition fees, but needing to pay for an additional parking spot to get to class on time is really frustrating. Especially when the only free parking isn’t even on campus. It’s a single lane on Stewart Dr, which requires a 10+ minute walk to campus. In addition to that, there are only a couple pay by space metered parking spots, making it very difficult to park on campus without a permit. 
+                            <br><br>
+                            Green permits are the most affordable option, but they are not located in the parking structure.
+                            <br><br>
+                            In the end, I decided to get the gold permit.
+                            <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/campus map.png" alt="campus map" class="process-image">
+                                </figure>
+                            </div>
+                            
+                            There are also three parking structures at UTD: PS1, PS2, PS3. with the floors typically being
+                            <ol>
+                                <li>Pay by Space</li>
+                                <li>Purple</li>
+                                <li>Orange</li>
+                                <li>Gold</li>
+                                <li>Gold (includes the top of the parking structure with no ceiling🫠)</li>
+                            </ol>
+
+                            <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/parking structure layout.png" alt="parking structure layout" class="process-image">
+                                </figure>
+                            </div>
+
+                            When I drove to classes for the first time, I expected to find a spot that matched the permit I got… 
+                            <br><br>
+                            I quickly realized that the parking situation was much more chaotic than I had anticipated.
+                            <br><br>
+                            Parking is like a dogfight at UTD, people are circling around parking structures, cars tailing students asking if they’re leaving to get a spot (this happened to me 😭), and dangerously speeding in areas where crashes can easily happen. 
+                        </p>
+                    </article>
+                    
+                    <article id="idea" class="process-panel">
+                        <h2>Idea</h2>
+                        <p>
+                            I’ve been a little scared to make my daily commute to campus after going through parking hell, so when this monthly challenge dropped to build something for yourgoo school, I already knew I wanted to help improve people’s experiences with parking. 
+                            <br><br>
+                            After a little research, I found that UTD actually has parking structure availability updated every 30 minutes on their mobile app, but nothing related to general parking lot availability… 
+                        </p>
+                        <h3>Problem</h3>
+                        <p>
+                            UTD students don't have a reliable way to know where they're most likely to find parking before arriving.  
+                        </p>
+                        <h3>Solution</h3>
+                        <p>
+                            This got me thinking what if I tried to map out parking availability at different times for commuter students wanting to find a spot before their next class? 🫨💡
+                        </p>
+                    </article>
+
+                    <article id="data" class="process-panel">
+                        <h2>Data Collection</h2>
+                        <p>
+                            Note: I’m excluding residential halls from this study as of now because you need a special residential hall/apartment parking permit. Gathering data from these spaces would not be feasible as of now.
+                            <br><br>
+                            Now the big question was how I would display parking availability at different times without knowing when the parking lots were full and how full they were. It’s not like UTD would let me place a few dozen cameras in every parking lot. The next best idea was to hand collect parking availability in the 98 degree fahrenheit Texas weather. So that’s exactly what I did :) 
+                            <br><br>
+                            For two weeks, I collected observations of parking availability across several lots by estimating how full each area was and recording the number of visible open spaces when possible. The data had some limitations, as I can’t stay on campus every day and check all 24 parking lots every hour. So I kept things simple to have a baseline data point to build on in the future.
+                            <br><br>
+                            The plan in 2 easy steps:
+                            <ol>
+                                <li>When coming into campus, park in a different lot every 3 days and make note of general availability</li>
+                                <li>When leaving campus, make a note of the general availability</li>
+                            </ol>
+                            <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/the plan. png" alt="data collection plan" class="process-image">
+                                </figure>
+                            </div>
+
+                        
+                        </p>
+                        <h3>Problem</h3>
+                        <p>
+                            UTD students don't have a reliable way to know where they're most likely to find parking before arriving.  
+                        </p>
+                        <h3>Solution</h3>
+                        <p>
+                            This got me thinking what if I tried to map out parking availability at different times for commuter students wanting to find a spot before their next class? 🫨💡
+                        </p>
+                    </article>
+
+                    <article id="development" class="process-panel">
+                        <h2>Development</h2>
+                        <p>
+                           The game’s flow is very simple, you first choose a gameplay mode and a character, beat a puzzle in each of the 6 house rooms to obtain a diary page and continue beating puzzles until you reach the end!
+                        </p>
+                         <div class="process-image-grid single-image-grid">
+                            <figure class="process-image-card">
+                                <img src="static/b4ifade/b4 i fade flow.png" alt="Bedroom in the past" class="process-image">
+                            </figure>
+                        </div> 
+
+                        <h3>Building the time mechanic:</h3>
+                        <p>
+                            I wanted players to go back and forth between past and present to solve puzzles. Players could then use information in the past and bring it to the present to piece together information.
+                            Objects and characters can have different appearances and positions in the past and present. I used Godot's Timer node to create a countdown while also playing music that speeds up as the timer approaches zero.
+                        </p>
+                        <div class="process-image-grid single-image-grid">
+                            <figure class="process-image-card">
+                                <img src="static/b4ifade/timer.png" alt="Bedroom in the past" class="process-image">
+                            </figure>
+                        </div> 
+                    </article>
+                    <article id="challenges" class="process-panel">
+                        <h2>Challenges</h2>
+                        <p>
+                            One of the main problems I ran into was using AnimationPlayers for dialogue. Since there were 2 characters, each dialogue animation would need to be duplicated and customized for each character. This was also inefficient for the player since they had to wait for the full text animation to finish before moving on. 
+                           <br> <br>
+                            After some research, I came across a seek() method for Godot's AnimationPlayers. I used this to create a function that would move to the next keyframe when the player pressed Space, effectively skipping the animation and allowing the player to read at their own pace.
+                        </p>
+                        <div class="process-image-grid single-image-grid">
+                            <figure class="process-image-card">
+                                <img src="static/b4ifade/dialogue.png" alt="Bedroom in the past" class="process-image">
+                            </figure>
+                        </div> 
+                    </article>
+                    <article id="iterations" class="process-panel">
+                        <h2>Iterations</h2>
+                        <p>
+                           After an initial prototype was made, Before I fade was put into 4 rounds of iterative QA testing.
+                            <br> <br>
+                            The feedback helped me find issues I didn't notice during development, especially around controls, player freedom, pacing, and how much information the game gave the player. 
+
+                            <br> <br>
+                            <h3>Controls:</h3>
+                            One of the biggest things many people expressed was the need for more familiar controls such as WASD keys and wanting to use other keys to interact with objects than just point and click.
+                            <div class="process-image-grid single-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/b4ifade/e.png" alt="Bedroom in the past" class="process-image">
+                                </figure>
+                            </div> 
+
+                            <br> <br>
+                            <h3>Navigation issues:</h3> 
+                            Some playtesters felt confused as to what to do even with in-game text instructions. 
+
+                            Instead of adding even more text, I added directional arrow animations to make navigation easier to understand while still allowing players to explore the rooms themselves. 
+                            <div class="process-image-grid single-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/b4ifade/arrow.jpeg" alt="Bedroom in the past" class="process-image">
+                                </figure>
+                            </div> 
+                            <br> <br>
+                           <h3>Reusable systems:</h3>
+                            As the game grew, manually updating every scene became difficult. I created global code systems, reusable linked scenes, and scene counters to make it easier to manage shared elements like the pause menu and track story progression 
+
+
+                        </p>
+                         <dl class="project-facts" style="border: none; margin-top: 20px;">
+                            <div><dt>New Features</dt><dd>40+</dd></div>
+                            <div><dt>Bug Fixes</dt><dd>70+</dd></div>
+                            <div><dt>Plays</dt><dd>700+</dd></div>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-conclusion" aria-labelledby="conclusion-title">
+            <div class="section-title conclusion-heading">
+                <h2 class="shadow-text">CONCLUSION</h2>
+                <h2 class="yellow-shadow">CONCLUSION</h2>
+                <h2 class="gradient-text" id="conclusion-title">CONCLUSION</h2>
+            </div>
+            <div class="conclusion-box">
+                <p>
+                Although Before I Fade started as a simple game jam project, it quickly became the biggest and most complex project I've ever worked on.
+                One of my biggest takeaways was seeing how much player feedback can change a game.
+                <br><br>
+                I'm really proud of how far Before I Fade has grown and how much support I received from the community!
+
+
+            </p>
+        </div>
+        </section>
+    </main>
+
+
+     <!-- contact me section -->
+    <div class = "contact-me-section" id = "contact">
+        <div class="contact-flexbox">
+        <div class = "section-title">
+            <h1 class="shadow-text">CONTACT ME</h1>
+            <h1 class="yellow-shadow">CONTACT ME</h1>
+            <h1 class="gradient-text">CONTACT ME</h1>
+        </div>
+    </div>
+    <p> </p>
+    <div class="contact-buttons-container">
+        <a href="mailto:vishalya18@gmail.com" class="contact-btn email-btn" target="_blank">
+            <img src="static/email yellow.svg" alt="Email Icon" class="contact-icon email-icon"/>
+            <span>Email</span>
+        </a>
+        <a href="https://github.com/vishyyyyyyyyy" class="contact-btn github-btn" target="_blank">
+            <img src="static/github yellow.svg" alt="GitHub Icon" class="contact-icon github-icon"/>
+            <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/vishalya-sairam/" class="contact-btn linkedin-btn" target="_blank">
+            <img src="static/linkedin yellow.svg" alt="LinkedIn Icon" class="contact-icon linkedin-icon"/>
+            <span>LinkedIn</span>
+        </a>
+    </div>
+
+    <div class="butterfly" style="left: 85%; top: 30%;">
+        <img src="static/butterfly.svg" alt="Butterfly" class="butterfly-img"/>
+    </div>
+    <div class="half-flower" style="left:-10%;top: 40%;">
+        <img src="static/inner flower.svg" alt="Half Flower" class="half-flower-img"/>
+    </div>
+
+
+    </div>
+</div>
+        <audio id="audio-player" src="../Daydreaming.mp3"></audio>
+
+</body>
+    <script src="../script.js"></script>
+</html>
