@@ -110,8 +110,6 @@
                     <a href="#analysis"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>ANALYSIS</span></a>
                     <a href="#design"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DESIGN</span></a>
                     <a href="#development"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DEVELOPMENT</span></a>
-                    <a href="#improvements"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>FUTURE IMPROVEMENTS</span></a>
-                    <a href="#thoughts"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>FINAL THOUGHTS</span></a>
                 </nav>
                 <div class="process-copy">
                     <article id="background" class="process-panel">
@@ -226,7 +224,7 @@
                             </figure>
                         </div> 
                         <p>
-                            I also wanted to learn about other UTD students’ parking experiences to see if they were facing the same kind of parking issues as me. So, I created Instagram polls and Google Forms and published it to UTD school stories[https://about.instagram.com/blog/announcements/instagram-schools-feature-college-students/]. This wasn’t the most ideal option to get detailed feedback as Instagram polls only have 4 options, but it was the quickest way to get a general consensus about parking-related matters with students
+                            I also wanted to learn about other UTD students’ parking experiences to see if they were facing the same kind of parking issues as me. So, I created Instagram polls and Google Forms and published it to UTD school stories.
 
                             The following polls received roughly around 110 votes for each question, all answered by fellow UTD students. 
 
@@ -246,13 +244,13 @@
                         <p>
                            Although 52% of students said that it takes under 5 minutes to find a spot, there are still 30% of students who spend 5 to 10 mins and 18% of students who spend more than 15 minutes just looking for parking. This is what I want to focus on and help those 48% of students navigate parking and get to class on time.
                             90% of students also said they would like to know about general parking lot availability, so this project was definitely heading in the right track!
-                            </p>
+                        </p>
                     </article>
 
                     <article id="design" class="process-panel">
                         <h2>Design</h2>
                         <p>
-                           Since people would want a quick glance at parking, I designed with mobile first in mind (which is something I’ve never done before xD ). Since this should be quite simple and intuitive to users, i wanted things to all be in one screen. Times, availability, and lot choosing.
+                           Since people would want a quick glance at parking, I designed with mobile first in mind, which is something I’ve never done before! Since this should be quite simple and intuitive to users, i wanted things to all be in one screen. Times, availability, and lot choosing.
                             <br> <br>
                             In terms of screen flow, i went with: 
                             “I need parking” → select permit → select destination → enter/choose arrival time → recommended lot → why this lot?
@@ -266,8 +264,8 @@
                            
                             <br> <br>
                             <p>
-                            I wanted this app to still be cute (ofc it’s gonna be cute if I make it :p  ) and use the UTD colors.
-                            So I made Temoc[] (our school’s mascot) riding a car for the loading and landing screens
+                            I wanted this app to still be cute and use the UTD colors.
+                            So I made Temoc (our school’s mascot) riding a car for the loading and landing screens
 
                             Lastly, I added a feedback popup notification. After being directed to Google Maps, once a user reopens the app, they can answer an additional survey to gather more data to build a parking availability database
 
@@ -291,6 +289,25 @@
                             <div><dt>Plays</dt><dd>700+</dd></div>
                         </dl> -->
                     </article>
+
+                    <article id="development" class="process-panel">
+                        <h2>Development</h2>
+                        <p>
+                          I used HTML CSS JavaScript to build CometPark.
+                          <br><br>
+
+                            Since I have very limited data, CometPark is in a very early prototype stage.
+                            When in the onboarding section to choose your top 3 parking spots, I used LocalStorage to save the spots into cometParkPreferences to then personalize and give recommendations based on that parking time. For the maps button, I learned you could semi search things when pressing links on websites (isn’t that cool?). The window.open() function allows passing of a variable name, in this case the lot name, to the website you are trying to open.
+                            <br><br>
+                            I also made a parking structure webscraper to pull parking structure availability from the UTD parking website. I ended up making a dictionary with different time and parking availabilities based on the data collected and a fallback array if there wasn’t any data recorded for that parking spot.
+                            <br><br>
+                            I also got a hand on loading animations! So while the user is waiting for the availability to pull from the data or the parking structure website, temoc is partying in his car :3 
+                        </p>
+                        <h3>Future Improvements</h3>
+                        <p>
+                            So my data is SUPER limited right now, I’ve started working on an implementation for the app to be run by users eventually. Once they press how hard or easy it was for them to find a spot, the app will collect data and build on top of that to then give newer recommendations for all areas I didn’t get a chance to collect. 
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -303,11 +320,8 @@
             </div>
             <div class="conclusion-box">
                 <p>
-                Although Before I Fade started as a simple game jam project, it quickly became the biggest and most complex project I've ever worked on.
-                One of my biggest takeaways was seeing how much player feedback can change a game.
-                <br><br>
-                I'm really proud of how far Before I Fade has grown and how much support I received from the community!
-
+               I really think if there is any way to make UTD a little better for students, it would be through parking. To save a piece of mind for students coming in late and wanting to get to class in time. I hope CometPark can further grow in the future and have enough data to help all students find their parking spot safely <3
+            
 
             </p>
         </div>
