@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishalya Sairam's Portfolio</title>
+    <script>if (localStorage.getItem('portfolio-dark-mode') === 'true') document.documentElement.classList.add('dark-mode');</script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="static/inner flower.svg">
+</head>
+<body>
+     <!-- header section -->
+    <header>
+        <nav>
+            <a href="../index.html">
+                <span class="nav-outline">VISHALYA SAIRAM  ഒ·˚⊹ ᰔ</span>
+                <span class="nav-fill">VISHALYA SAIRAM  ഒ·˚⊹ ᰔ</span>
+            </a>
+            <div class="nav-spacer">
+            <a href="../projects.html">
+                <span class="nav-outline">Projects</span>
+                <span class="nav-fill">Projects</span>
+            </a>
+            <a href="../fun.html">
+                <span class="nav-outline">Fun</span>
+                <span class="nav-fill">Fun</span>
+            </a>
+            <a href="../scribbles.html">
+                <span class="nav-outline">Scribbles</span>
+                <span class="nav-fill">Scribbles</span>
+            </a>
+            <a href="../about.html">
+                <span class="nav-outline">About</span>
+                <span class="nav-fill">About</span>
+            </a>
+            </div>
+        </nav>
+    </header>
+    <div class="header-button-container">
+            <!-- Music Button -->
+            <button id="music-button" class = "header-button" type="button">
+                <div class="pink-floaty" style="width: 60px; height: 60px;">
+                    <img src="" id="music-icon" alt="Music Icon" style="width: 50%; height: 50%;">
+                </div>
+
+            </button>
+
+            <!-- Theme Button -->
+            <button id="theme-button" class = "header-button" type="button">
+                <div class="yellow-floaty" style="width: 60px; height: 60px;">
+                    <img src="static/light mode.svg" id="theme-icon" alt="Theme Icon" style="width: 50%; height: 50%;">
+                </div>
+
+            </button>
+        </div>
+
+    <main class="project-page">
+        <section class="project-hero" aria-labelledby="project-title">
+            <div class="section-title project-heading">
+                <h1 class="shadow-text">COMET PARK</h1>
+                <h1 class="yellow-shadow">COMET PARK</h1>
+                <h1 class="gradient-text" id="project-title">COMET PARK</h1>
+            </div>
+            <div class="project-hero-grid">
+                <div class="left-card">
+                    <div class="projects-view" style="background-image: url('static/cometpark/cometpark mockup.png'); --bg-size: 110%;"></div>
+                </div>
+                <div class="project-summary">
+                    <div class="project-tags">
+                        <span>#case study</span>
+                        <span>#visual design</span>
+                    </div>
+                    <div class="project-award">
+                        <img src="static/trophy.svg" alt="Trophy">
+                        <span>Best Overall Build - Codédex Back 2 School Challenge</span>
+                    </div>
+                    <p>
+                    Comet Park is a mobile app designed to help UTD commuters find the best available parking spots on campus. 
+                    </p>
+                    <dl class="project-facts">
+                        <div><dt>Role</dt><dd>Designer<br>Developer</dd></div>
+                        <div><dt>Duration</dt><dd>OCT 2026 - NOV 2026</dd></div>
+                        <div><dt>Tools</dt><dd>Figma<br>VS Code<br>GitHub Copilot</dd></div>
+                    </dl>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://vishyyyyyyyyy.github.io/CometPark/" target="_blank" rel="noopener noreferrer" class="project-pill">Live Demo ⤿</a>
+                <a href="https://github.com/vishyyyyyyyyy/CometPark" target="_blank" rel="noopener noreferrer" class="project-pill github-pill">
+                    <img src="static/github yellow.svg" alt="" class="project-pill-icon">
+                    <span>Repository</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="process-section" aria-labelledby="process-title">
+            <div class="section-title process-heading">
+                <h2 class="shadow-text">PROCESS BREAKDOWN</h2>
+                <h2 class="yellow-shadow">PROCESS BREAKDOWN</h2>
+                <h2 class="gradient-text" id="process-title">PROCESS BREAKDOWN</h2>
+            </div>
+            <div class="process-layout">
+                <nav class="process-nav" aria-label="Project process">
+                    <a href="#background" class="is-active"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>BACKGROUND</span></a>
+                    <a href="#idea"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>IDEA</span></a>
+                    <a href="#data"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DATA COLLECTION</span></a>
+                    <a href="#observations"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>KEY OBSERVATIONS</span></a>
+                    <a href="#analysis"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>ANALYSIS</span></a>
+                    <a href="#design"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DESIGN</span></a>
+                    <a href="#development"><img src="static/project leaf.svg" alt="" aria-hidden="true"><span>DEVELOPMENT</span></a>
+                </nav>
+                <div class="process-copy">
+                    <article id="background" class="process-panel">
+                        <h2>BACKGROUND</h2>
+                        <p>
+                            Before I get into the project, here’s a short intro about me + my school: <br><br>
+                            I’m a sophomore at the University of Texas at Dallas and study Computer Engineering! UTD is really nice and small, making it easy to walk to classes in under 5 mins max. There’s a bunch of clubs and super cool activities, but there is one huge problem: parking.
+                            <br><br>
+                            UTD is widely considered a commuter-heavy school, as many students don’t live on campus and drive or use the dart bus to get to classes on time. But what if I told you parking sucks at UTD? 
+                            I’m a relatively new driver and was excited I could now drive myself to college without having to ask my parents to drop me off. When I tried to purchase a parking permit, I was a little shocked by how expensive parking permits were.
+                            <br><br>
+
+                            <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/permit cost.png" alt="permit costs" class="process-image">
+                                </figure>
+                            </div>
+
+                            Students are already paying high tuition fees, but needing to pay for an additional parking spot to get to class on time is really frustrating. Especially when the only free parking isn’t even on campus. It’s a single lane on Stewart Dr, which requires a 10+ minute walk to campus. In addition to that, there are only a couple pay by space metered parking spots, making it very difficult to park on campus without a permit. 
+                            <br><br>
+                            Green permits are the most affordable option, but they are not located in the parking structure.
+                            <br><br>
+                            In the end, I decided to get the gold permit.
+                            <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/campus map.png" alt="campus map" class="process-image">
+                                </figure>
+                            </div>
+                            
+                            There are also three parking structures at UTD: PS1, PS2, PS3. with the floors typically being
+                            <ol>
+                                <li>Pay by Space</li>
+                                <li>Purple</li>
+                                <li>Orange</li>
+                                <li>Gold</li>
+                                <li>Gold (includes the top of the parking structure with no ceiling🫠)</li>
+                            </ol>
+
+                            <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/parking structure layout.png" alt="parking structure layout" class="process-image">
+                                </figure>
+                            </div>
+
+                            When I drove to classes for the first time, I expected to find a spot that matched the permit I got… 
+                            <br><br>
+                            I quickly realized that the parking situation was much more chaotic than I had anticipated.
+                            <br><br>
+                            Parking is like a dogfight at UTD, people are circling around parking structures, cars tailing students asking if they’re leaving to get a spot (this happened to me 😭), and dangerously speeding in areas where crashes can easily happen. 
+                        </p>
+                    </article>
+                    
+                    <article id="idea" class="process-panel">
+                        <h2>Idea</h2>
+                        <p>
+                            I’ve been a little scared to make my daily commute to campus after going through parking hell, so when this monthly challenge dropped to build something for yourgoo school, I already knew I wanted to help improve people’s experiences with parking. 
+                            <br><br>
+                            After a little research, I found that UTD actually has parking structure availability updated every 30 minutes on their mobile app, but nothing related to general parking lot availability… 
+                        </p>
+                        <h3>Problem</h3>
+                        <p>
+                            UTD students don't have a reliable way to know where they're most likely to find parking before arriving.  
+                        </p>
+                        <h3>Solution</h3>
+                        <p>
+                            This got me thinking what if I tried to map out parking availability at different times for commuter students wanting to find a spot before their next class? 🫨💡
+                        </p>
+                    </article>
+
+                    <article id="data" class="process-panel">
+                        <h2>Data Collection</h2>
+                        <p>
+                            Note: I’m excluding residential halls from this study as of now because you need a special residential hall/apartment parking permit. Gathering data from these spaces would not be feasible as of now.
+                            <br><br>
+                            Now the big question was how I would display parking availability at different times without knowing when the parking lots were full and how full they were. It’s not like UTD would let me place a few dozen cameras in every parking lot. The next best idea was to hand collect parking availability in the 98 degree fahrenheit Texas weather. So that’s exactly what I did :) 
+                            <br><br>
+                            For two weeks, I collected observations of parking availability across several lots by estimating how full each area was and recording the number of visible open spaces when possible. The data had some limitations, as I can’t stay on campus every day and check all 24 parking lots every hour. So I kept things simple to have a baseline data point to build on in the future.
+                            <br><br>
+                            The plan in 2 easy steps:
+                            <ol>
+                                <li>When coming into campus, park in a different lot every 3 days and make note of general availability</li>
+                                <li>When leaving campus, make a note of the general availability</li>
+                            </ol>
+                            <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/the plan.png" alt="data collection plan" class="process-image">
+                                </figure>
+                            </div>
+
+                        
+                        </p>
+
+                        <h3>Problem</h3>
+                        <p>
+                            UTD students don't have a reliable way to know where they're most likely to find parking before arriving.  
+                        </p>
+                        <h3>Solution</h3>
+                        <p>
+                            This got me thinking what if I tried to map out parking availability at different times for commuter students wanting to find a spot before their next class? 🫨💡
+                        </p>
+                    </article>
+
+                    <article id="observations" class="process-panel">
+                        <h2>Key Observations</h2>
+                        <p>
+                           I ended up getting to collect data from 4 parking lots!
+
+                        </p>
+                         <div class="process-image-grid single-image-grid">
+                            <figure class="process-image-card">
+                                <img src="static/cometpark/key observations.png" alt="Bedroom in the past" class="process-image">
+                            </figure>
+                        </div> 
+                        <p>
+                            I also wanted to learn about other UTD students’ parking experiences to see if they were facing the same kind of parking issues as me. So, I created Instagram polls and Google Forms and published it to UTD school stories.
+
+                            The following polls received roughly around 110 votes for each question, all answered by fellow UTD students. 
+
+                        </p>
+                        <div class="process-image-grid">
+                            <figure class="process-image-card">
+                                <img src="static/cometpark/survey data pt 1.png" alt="Bedroom in the past" class="process-image">
+                            </figure>
+                            <figure class="process-image-card">
+                                <img src="static/cometpark/survey data pt 2.png" alt="Bedroom in the past" class="process-image">
+                            </figure>
+                        </div> 
+                    </article>
+
+                    <article id="analysis" class="process-panel">
+                        <h2>Analysis</h2>
+                        <p>
+                           Although 52% of students said that it takes under 5 minutes to find a spot, there are still 30% of students who spend 5 to 10 mins and 18% of students who spend more than 15 minutes just looking for parking. This is what I want to focus on and help those 48% of students navigate parking and get to class on time.
+                            90% of students also said they would like to know about general parking lot availability, so this project was definitely heading in the right track!
+                        </p>
+                    </article>
+
+                    <article id="design" class="process-panel">
+                        <h2>Design</h2>
+                        <p>
+                           Since people would want a quick glance at parking, I designed with mobile first in mind, which is something I’ve never done before! Since this should be quite simple and intuitive to users, i wanted things to all be in one screen. Times, availability, and lot choosing.
+                            <br> <br>
+                            In terms of screen flow, i went with: 
+                            “I need parking” → select permit → select destination → enter/choose arrival time → recommended lot → why this lot?
+                        </p> 
+                            <br> <br>
+                            <div class="process-image-grid single-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/flow.jpeg" alt="flow chart" class="process-image">
+                                </figure>
+                            </div> 
+                           
+                            <br> <br>
+                            <p>
+                            I wanted this app to still be cute and use the UTD colors.
+                            So I made Temoc (our school’s mascot) riding a car for the loading and landing screens
+
+                            Lastly, I added a feedback popup notification. After being directed to Google Maps, once a user reopens the app, they can answer an additional survey to gather more data to build a parking availability database
+
+                            I got to practice a lot with auto layout and component sets while designing this app!
+                            systems, reusable linked scenes, and scene counters to make it easier to manage shared elements like the pause menu and track story progression 
+                            </p>
+                                <div class="process-image-grid">
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/loading.jpeg" alt="Bedroom in the past" class="process-image">
+                                </figure>
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/layout1.jpeg" alt="Bedroom in the past" class="process-image">
+                                </figure>
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/layout2.jpeg" alt="Bedroom in the past" class="process-image">
+                                </figure>
+                            </div> 
+                         <!-- <dl class="project-facts" style="border: none; margin-top: 20px;">
+                            <div><dt>Users</dt><dd>5</dd></div>
+                            <div><dt>Bug Fixes</dt><dd>70+</dd></div>
+                            <div><dt>Plays</dt><dd>700+</dd></div>
+                        </dl> -->
+                    </article>
+
+                    <article id="development" class="process-panel">
+                        <h2>Development</h2>
+                        <p>
+                          I used HTML CSS JavaScript to build CometPark.
+                          <br><br>
+
+                            Since I have very limited data, CometPark is in a very early prototype stage.
+                            When in the onboarding section to choose your top 3 parking spots, I used LocalStorage to save the spots into cometParkPreferences to then personalize and give recommendations based on that parking time. For the maps button, I learned you could semi search things when pressing links on websites (isn’t that cool?). The window.open() function allows passing of a variable name, in this case the lot name, to the website you are trying to open.
+                            <br><br>
+                            I also made a parking structure webscraper to pull parking structure availability from the UTD parking website. I ended up making a dictionary with different time and parking availabilities based on the data collected and a fallback array if there wasn’t any data recorded for that parking spot.
+                            <br><br>
+                            I also got a hand on loading animations! So while the user is waiting for the availability to pull from the data or the parking structure website, temoc is partying in his car :3 
+                        </p>
+                        <h3>Future Improvements</h3>
+                        <p>
+                            So my data is SUPER limited right now, I’ve started working on an implementation for the app to be run by users eventually. Once they press how hard or easy it was for them to find a spot, the app will collect data and build on top of that to then give newer recommendations for all areas I didn’t get a chance to collect. 
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-conclusion" aria-labelledby="conclusion-title">
+            <div class="section-title conclusion-heading">
+                <h2 class="shadow-text">CONCLUSION</h2>
+                <h2 class="yellow-shadow">CONCLUSION</h2>
+                <h2 class="gradient-text" id="conclusion-title">CONCLUSION</h2>
+            </div>
+            <div class="conclusion-box">
+                <p>
+               I really think if there is any way to make UTD a little better for students, it would be through parking. To save a piece of mind for students coming in late and wanting to get to class in time. I hope CometPark can further grow in the future and have enough data to help all students find their parking spot safely <3
+            
+
+            </p>
+        </div>
+        </section>
+    </main>
+
+
+     <!-- contact me section -->
+    <div class = "contact-me-section" id = "contact">
+        <div class="contact-flexbox">
+        <div class = "section-title">
+            <h1 class="shadow-text">CONTACT ME</h1>
+            <h1 class="yellow-shadow">CONTACT ME</h1>
+            <h1 class="gradient-text">CONTACT ME</h1>
+        </div>
+    </div>
+    <p> </p>
+    <div class="contact-buttons-container">
+        <a href="mailto:vishalya18@gmail.com" class="contact-btn email-btn" target="_blank">
+            <img src="static/email yellow.svg" alt="Email Icon" class="contact-icon email-icon"/>
+            <span>Email</span>
+        </a>
+        <a href="https://github.com/vishyyyyyyyyy" class="contact-btn github-btn" target="_blank">
+            <img src="static/github yellow.svg" alt="GitHub Icon" class="contact-icon github-icon"/>
+            <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/vishalya-sairam/" class="contact-btn linkedin-btn" target="_blank">
+            <img src="static/linkedin yellow.svg" alt="LinkedIn Icon" class="contact-icon linkedin-icon"/>
+            <span>LinkedIn</span>
+        </a>
+    </div>
+
+    <div class="butterfly" style="left: 85%; top: 30%;">
+        <img src="static/butterfly.svg" alt="Butterfly" class="butterfly-img"/>
+    </div>
+    <div class="half-flower" style="left:-10%;top: 40%;">
+        <img src="static/inner flower.svg" alt="Half Flower" class="half-flower-img"/>
+    </div>
+
+
+    </div>
+</div>
+        <audio id="audio-player" src="../Daydreaming.mp3"></audio>
+
+</body>
+    <script src="../script.js"></script>
+</html>
