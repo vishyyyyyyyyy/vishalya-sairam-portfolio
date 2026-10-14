@@ -74,7 +74,7 @@
                     </div>
                     <div class="project-award">
                         <img src="static/trophy.svg" alt="Trophy">
-                        <span>The best overall Build that's got legs - Codédex Back 2 School Challenge</span>
+                        <span>Best Overall Build - Codédex Back 2 School Challenge</span>
                     </div>
                     <p>
                     Comet Park is a mobile app designed to help UTD commuters find the best available parking spots on campus. 
@@ -123,10 +123,7 @@
                             UTD is widely considered a commuter-heavy school, as many students don’t live on campus and drive or use the dart bus to get to classes on time. But what if I told you parking sucks at UTD? 
                             I’m a relatively new driver and was excited I could now drive myself to college without having to ask my parents to drop me off. When I tried to purchase a parking permit, I was a little shocked by how expensive parking permits were.
                             <br><br>
-                            Green: $198 <br>
-                            Gold: $355<br>
-                            Orange: $547<br>
-                            Purple: $676<br>
+
                             <div class="process-image-grid">
                                 <figure class="process-image-card">
                                     <img src="static/cometpark/permit cost.png" alt="permit costs" class="process-image">
@@ -200,12 +197,13 @@
                             </ol>
                             <div class="process-image-grid">
                                 <figure class="process-image-card">
-                                    <img src="static/cometpark/the plan. png" alt="data collection plan" class="process-image">
+                                    <img src="static/cometpark/the plan.png" alt="data collection plan" class="process-image">
                                 </figure>
                             </div>
 
                         
                         </p>
+
                         <h3>Problem</h3>
                         <p>
                             UTD students don't have a reliable way to know where they're most likely to find parking before arriving.  
@@ -216,78 +214,82 @@
                         </p>
                     </article>
 
-                    <article id="development" class="process-panel">
-                        <h2>Development</h2>
+                    <article id="observations" class="process-panel">
+                        <h2>Key Observations</h2>
                         <p>
-                           The game’s flow is very simple, you first choose a gameplay mode and a character, beat a puzzle in each of the 6 house rooms to obtain a diary page and continue beating puzzles until you reach the end!
+                           I ended up getting to collect data from 4 parking lots!
+
                         </p>
                          <div class="process-image-grid single-image-grid">
                             <figure class="process-image-card">
-                                <img src="static/b4ifade/b4 i fade flow.png" alt="Bedroom in the past" class="process-image">
+                                <img src="static/cometpark/key observations.png" alt="Bedroom in the past" class="process-image">
                             </figure>
                         </div> 
-
-                        <h3>Building the time mechanic:</h3>
                         <p>
-                            I wanted players to go back and forth between past and present to solve puzzles. Players could then use information in the past and bring it to the present to piece together information.
-                            Objects and characters can have different appearances and positions in the past and present. I used Godot's Timer node to create a countdown while also playing music that speeds up as the timer approaches zero.
+                            I also wanted to learn about other UTD students’ parking experiences to see if they were facing the same kind of parking issues as me. So, I created Instagram polls and Google Forms and published it to UTD school stories[https://about.instagram.com/blog/announcements/instagram-schools-feature-college-students/]. This wasn’t the most ideal option to get detailed feedback as Instagram polls only have 4 options, but it was the quickest way to get a general consensus about parking-related matters with students
+
+                            The following polls received roughly around 110 votes for each question, all answered by fellow UTD students. 
+
                         </p>
-                        <div class="process-image-grid single-image-grid">
+                        <div class="process-image-grid">
                             <figure class="process-image-card">
-                                <img src="static/b4ifade/timer.png" alt="Bedroom in the past" class="process-image">
+                                <img src="static/cometpark/survey data pt 1.png" alt="Bedroom in the past" class="process-image">
+                            </figure>
+                            <figure class="process-image-card">
+                                <img src="static/cometpark/survey data pt 2.png" alt="Bedroom in the past" class="process-image">
                             </figure>
                         </div> 
                     </article>
-                    <article id="challenges" class="process-panel">
-                        <h2>Challenges</h2>
+
+                    <article id="analysis" class="process-panel">
+                        <h2>Analysis</h2>
                         <p>
-                            One of the main problems I ran into was using AnimationPlayers for dialogue. Since there were 2 characters, each dialogue animation would need to be duplicated and customized for each character. This was also inefficient for the player since they had to wait for the full text animation to finish before moving on. 
-                           <br> <br>
-                            After some research, I came across a seek() method for Godot's AnimationPlayers. I used this to create a function that would move to the next keyframe when the player pressed Space, effectively skipping the animation and allowing the player to read at their own pace.
-                        </p>
-                        <div class="process-image-grid single-image-grid">
-                            <figure class="process-image-card">
-                                <img src="static/b4ifade/dialogue.png" alt="Bedroom in the past" class="process-image">
-                            </figure>
-                        </div> 
+                           Although 52% of students said that it takes under 5 minutes to find a spot, there are still 30% of students who spend 5 to 10 mins and 18% of students who spend more than 15 minutes just looking for parking. This is what I want to focus on and help those 48% of students navigate parking and get to class on time.
+                            90% of students also said they would like to know about general parking lot availability, so this project was definitely heading in the right track!
+                            </p>
                     </article>
-                    <article id="iterations" class="process-panel">
-                        <h2>Iterations</h2>
+
+                    <article id="design" class="process-panel">
+                        <h2>Design</h2>
                         <p>
-                           After an initial prototype was made, Before I fade was put into 4 rounds of iterative QA testing.
+                           Since people would want a quick glance at parking, I designed with mobile first in mind (which is something I’ve never done before xD ). Since this should be quite simple and intuitive to users, i wanted things to all be in one screen. Times, availability, and lot choosing.
                             <br> <br>
-                            The feedback helped me find issues I didn't notice during development, especially around controls, player freedom, pacing, and how much information the game gave the player. 
-
+                            In terms of screen flow, i went with: 
+                            “I need parking” → select permit → select destination → enter/choose arrival time → recommended lot → why this lot?
+                        </p> 
                             <br> <br>
-                            <h3>Controls:</h3>
-                            One of the biggest things many people expressed was the need for more familiar controls such as WASD keys and wanting to use other keys to interact with objects than just point and click.
                             <div class="process-image-grid single-image-grid">
                                 <figure class="process-image-card">
-                                    <img src="static/b4ifade/e.png" alt="Bedroom in the past" class="process-image">
+                                    <img src="static/cometpark/flow.jpeg" alt="flow chart" class="process-image">
                                 </figure>
                             </div> 
-
+                           
                             <br> <br>
-                            <h3>Navigation issues:</h3> 
-                            Some playtesters felt confused as to what to do even with in-game text instructions. 
+                            <p>
+                            I wanted this app to still be cute (ofc it’s gonna be cute if I make it :p  ) and use the UTD colors.
+                            So I made Temoc[] (our school’s mascot) riding a car for the loading and landing screens
 
-                            Instead of adding even more text, I added directional arrow animations to make navigation easier to understand while still allowing players to explore the rooms themselves. 
-                            <div class="process-image-grid single-image-grid">
+                            Lastly, I added a feedback popup notification. After being directed to Google Maps, once a user reopens the app, they can answer an additional survey to gather more data to build a parking availability database
+
+                            I got to practice a lot with auto layout and component sets while designing this app!
+                            systems, reusable linked scenes, and scene counters to make it easier to manage shared elements like the pause menu and track story progression 
+                            </p>
+                                <div class="process-image-grid">
                                 <figure class="process-image-card">
-                                    <img src="static/b4ifade/arrow.jpeg" alt="Bedroom in the past" class="process-image">
+                                    <img src="static/cometpark/loading.jpeg" alt="Bedroom in the past" class="process-image">
+                                </figure>
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/layout1.jpeg" alt="Bedroom in the past" class="process-image">
+                                </figure>
+                                <figure class="process-image-card">
+                                    <img src="static/cometpark/layout2.jpeg" alt="Bedroom in the past" class="process-image">
                                 </figure>
                             </div> 
-                            <br> <br>
-                           <h3>Reusable systems:</h3>
-                            As the game grew, manually updating every scene became difficult. I created global code systems, reusable linked scenes, and scene counters to make it easier to manage shared elements like the pause menu and track story progression 
-
-
-                        </p>
-                         <dl class="project-facts" style="border: none; margin-top: 20px;">
-                            <div><dt>New Features</dt><dd>40+</dd></div>
+                         <!-- <dl class="project-facts" style="border: none; margin-top: 20px;">
+                            <div><dt>Users</dt><dd>5</dd></div>
                             <div><dt>Bug Fixes</dt><dd>70+</dd></div>
                             <div><dt>Plays</dt><dd>700+</dd></div>
-                        </dl>
+                        </dl> -->
                     </article>
                 </div>
             </div>
