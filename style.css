@@ -10,7 +10,7 @@
 }
 
 :root {
-  --bg-color: #FFEDB2;
+  --bg-color: #ffeeb8;
   --dark-theme-bg: #270637;
   --color-baby-yellow: #FFFAAA;
   --font-family: Inter, sans-serif;
@@ -902,9 +902,10 @@ nav a:hover .nav-fill {
   box-shadow: 0px 3px 10px var(--color-deep-deep-yellow);
 }
 
-.process-panel h3 { margin: 0 0 8px; color: var(--color-deep-deep-yellow); font-size: 1.25rem; text-transform: uppercase; }
-.process-panel h4 { margin: 24px 0 8px; color: var(--color-deep-deep-yellow); font-size: 1rem; text-transform: uppercase; }
-.process-panel p { max-width: 680px; margin: 0; color: var(--color-pink); font-size: .95rem; line-height: 1.7; }
+.process-panel h3 { margin: 0 0 8px; color: var(--color-deep-deep-yellow); font-size: 1.3rem; text-transform: uppercase; }
+.process-panel h2 { margin: 0 0 8px; color: var(--color-hotpink); text-transform: uppercase; margin-bottom:30px ; }
+/* .process-panel h4 { margin: 24px 0 8px; color: var(--color-deep-deep-yellow); font-size: 1rem; text-transform: uppercase; } */
+.process-panel p { max-width: 680px; margin: 0; color: var(--color-pink); font-size: 0.95rem; line-height: 2; }
 
 .process-image-grid {
   display: grid;
